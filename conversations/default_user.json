@@ -1,0 +1,62 @@
+[
+  {
+    "role": "user",
+    "content": "¿Qué efectos secundarios tiene el omeprazol?",
+    "timestamp": "2026-03-09T11:56:38.688745",
+    "metadata": {}
+  },
+  {
+    "role": "assistant",
+    "content": "El omeprazol puede causar efectos secundarios como dolor de estómago, náuseas, diarrea o constipación, dolor de cabeza y cansancio. También puede aumentar el riesgo de infecciones por hongos en la boca y en el intestino. Si experimentas cualquier efecto secundario grave, consulta con tu médico lo más pronto posible. Cuídate.",
+    "timestamp": "2026-03-09T11:57:05.556889",
+    "metadata": {}
+  },
+  {
+    "role": "user",
+    "content": "Llevo 3 días con fiebre de 38.5°C",
+    "timestamp": "2026-03-09T11:57:13.777514",
+    "metadata": {}
+  },
+  {
+    "role": "assistant",
+    "content": "Una fiebre durante tres días que mantiene una temperatura de 38.5°C puede indicar una causa grave que requiere evaluación médica. Es importante acudir a urgencias hoy mismo sin esperar.",
+    "timestamp": "2026-03-09T11:57:26.321336",
+    "metadata": {}
+  },
+  {
+    "role": "user",
+    "content": "Me duele el pecho cuando respiro hondo",
+    "timestamp": "2026-03-09T11:57:28.777578",
+    "metadata": {}
+  },
+  {
+    "role": "assistant",
+    "content": "El dolor en el pecho al respirar profundamente puede indicar una causa grave que requiere evaluación médica. Es importante acudir a un médico de inmediato para una evaluación completa.",
+    "timestamp": "2026-03-09T11:57:45.464566",
+    "metadata": {}
+  },
+  {
+    "role": "user",
+    "content": "Tengo mareos desde hace 2 días",
+    "timestamp": "2026-03-09T11:57:53.068538",
+    "metadata": {}
+  },
+  {
+    "role": "assistant",
+    "content": "Los mareos pueden ser causados por una variedad de factores, como enfermedades infecciosas, deshidratación o problemas digestivos. Si los mareos persisten durante más de dos días, es posible que necesites ver a un médico para descartar cualquier problema grave. Espero que mejores pronto.",
+    "timestamp": "2026-03-09T11:58:10.542704",
+    "metadata": {}
+  },
+  {
+    "role": "user",
+    "content": "J'ai mal à la gorge depuis 3 jours",
+    "timestamp": "2026-03-09T11:58:14.528942",
+    "metadata": {}
+  },
+  {
+    "role": "assistant",
+    "content": "Douleur de gorge pendant trois jours peut indiquer une cause grave qui requiert évaluation médicale urgente. Il est important d'aller voir un médecin sans délai.",
+    "timestamp": "2026-03-09T11:58:29.282821",
+    "metadata": {}
+  }
+]

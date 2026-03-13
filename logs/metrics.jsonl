@@ -1,0 +1,813 @@
+{"timestamp": "2026-01-10T13:29:03.486775", "metric": "health_agent_response_time", "value": 23.655576705932617, "tags": {"agent": "health_agent"}}
+{"timestamp": "2026-01-10T13:29:44.792128", "metric": "health_agent_response_time", "value": 19.946597814559937, "tags": {"agent": "health_agent"}}
+{"timestamp": "2026-01-10T13:30:03.775237", "metric": "health_agent_response_time", "value": 38.574098110198975, "tags": {"agent": "health_agent"}}
+{"timestamp": "2026-01-10T13:30:23.293673", "metric": "health_agent_response_time", "value": 46.27049422264099, "tags": {"agent": "health_agent"}}
+{"timestamp": "2026-01-10T13:32:09.993992", "metric": "health_agent_response_time", "value": 9.622563362121582, "tags": {"agent": "health_agent", "answer_length": 202}}
+{"timestamp": "2026-01-10T13:34:27.728104", "metric": "health_agent_response_time", "value": 9.588457107543945, "tags": {"agent": "health_agent", "answer_length": 212}}
+{"timestamp": "2026-01-10T13:34:50.662957", "metric": "health_agent_response_time", "value": 7.639589071273804, "tags": {"agent": "health_agent", "answer_length": 160}}
+{"timestamp": "2026-01-10T13:37:16.998889", "metric": "health_agent_response_time", "value": 8.731918334960938, "tags": {"agent": "health_agent", "answer_length": 212}}
+{"timestamp": "2026-01-10T13:37:37.241863", "metric": "health_agent_response_time", "value": 8.010778188705444, "tags": {"agent": "health_agent", "answer_length": 191}}
+{"timestamp": "2026-01-10T13:41:30.263707", "metric": "health_agent_response_time", "value": 8.753562927246094, "tags": {"agent": "health_agent", "answer_length": 213}}
+{"timestamp": "2026-01-10T13:41:56.819363", "metric": "health_agent_response_time", "value": 10.032971382141113, "tags": {"agent": "health_agent", "answer_length": 228}}
+{"timestamp": "2026-01-10T13:42:52.905137", "metric": "health_agent_response_time", "value": 9.741127014160156, "tags": {"agent": "health_agent", "answer_length": 224}}
+{"timestamp": "2026-01-10T13:43:01.868981", "metric": "health_agent_response_time", "value": 17.853964805603027, "tags": {"agent": "health_agent", "answer_length": 213}}
+{"timestamp": "2026-01-10T13:43:16.069554", "metric": "health_agent_response_time", "value": 8.4407799243927, "tags": {"agent": "health_agent", "answer_length": 199}}
+{"timestamp": "2026-01-10T13:48:17.024363", "metric": "health_agent_response_time", "value": 8.74294114112854, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-10T13:48:24.042344", "metric": "health_agent_response_time", "value": 11.51128339767456, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-10T13:48:55.257909", "metric": "health_agent_response_time", "value": 14.638608455657959, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-10T13:49:09.061561", "metric": "health_agent_response_time", "value": 19.709676265716553, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-10T13:55:16.164270", "metric": "health_agent_response_time", "value": 16.050275802612305, "tags": {"agent": "health_agent", "language": "français"}}
+{"timestamp": "2026-01-10T13:55:42.091199", "metric": "health_agent_response_time", "value": 8.750465631484985, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-10T13:56:17.539236", "metric": "health_agent_response_time", "value": 8.270198583602905, "tags": {"agent": "health_agent", "language": "English"}}
+{"timestamp": "2026-01-10T13:57:00.615264", "metric": "health_agent_response_time", "value": 11.941770076751709, "tags": {"agent": "health_agent", "language": "العربية"}}
+{"timestamp": "2026-01-10T14:00:01.283029", "metric": "health_agent_response_time", "value": 10.538609504699707, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-10T14:00:26.392782", "metric": "health_agent_response_time", "value": 9.608882665634155, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-10T14:00:57.250560", "metric": "health_agent_response_time", "value": 8.818516969680786, "tags": {"agent": "health_agent", "language": "français"}}
+{"timestamp": "2026-01-10T14:01:36.815181", "metric": "health_agent_response_time", "value": 12.007148027420044, "tags": {"agent": "health_agent", "language": "français"}}
+{"timestamp": "2026-01-10T14:01:48.281315", "metric": "health_agent_response_time", "value": 22.80472707748413, "tags": {"agent": "health_agent", "language": "français"}}
+{"timestamp": "2026-01-10T14:02:09.122608", "metric": "health_agent_response_time", "value": 6.808858394622803, "tags": {"agent": "health_agent", "language": "English"}}
+{"timestamp": "2026-01-10T14:03:13.801406", "metric": "health_agent_response_time", "value": 14.10275411605835, "tags": {"agent": "health_agent", "language": "العربية"}}
+{"timestamp": "2026-01-10T14:05:47.143587", "metric": "health_agent_response_time", "value": 7.761137008666992, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-10T14:05:56.180626", "metric": "health_agent_response_time", "value": 9.64072847366333, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-10T14:06:05.028599", "metric": "health_agent_response_time", "value": 13.43942904472351, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-10T14:06:14.276693", "metric": "health_agent_response_time", "value": 15.324910640716553, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-10T14:06:47.292438", "metric": "health_agent_response_time", "value": 10.774476528167725, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-10T14:06:57.476024", "metric": "health_agent_response_time", "value": 12.780035495758057, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-10T14:07:12.896834", "metric": "health_agent_response_time", "value": 9.002127170562744, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-10T14:07:27.327454", "metric": "health_agent_response_time", "value": 8.942770004272461, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-10T14:08:50.956507", "metric": "health_agent_response_time", "value": 11.42296576499939, "tags": {"agent": "health_agent", "language": "français"}}
+{"timestamp": "2026-01-10T14:09:15.698351", "metric": "health_agent_response_time", "value": 8.41518259048462, "tags": {"agent": "health_agent", "language": "français"}}
+{"timestamp": "2026-01-10T14:09:40.139799", "metric": "health_agent_response_time", "value": 5.829742670059204, "tags": {"agent": "health_agent", "language": "English"}}
+{"timestamp": "2026-01-10T14:10:27.567934", "metric": "health_agent_response_time", "value": 8.207175970077515, "tags": {"agent": "health_agent", "language": "English"}}
+{"timestamp": "2026-01-10T14:10:41.567993", "metric": "health_agent_response_time", "value": 7.534562826156616, "tags": {"agent": "health_agent", "language": "English"}}
+{"timestamp": "2026-01-10T14:10:48.936345", "metric": "health_agent_response_time", "value": 10.442778587341309, "tags": {"agent": "health_agent", "language": "English"}}
+{"timestamp": "2026-01-13T05:30:19.638316", "metric": "health_agent_response_time", "value": 28.75357174873352, "tags": {"agent": "health_agent", "language": "français"}}
+{"timestamp": "2026-01-13T05:31:07.448530", "metric": "health_agent_response_time", "value": 24.330285787582397, "tags": {"agent": "health_agent", "language": "العربية"}}
+{"timestamp": "2026-01-13T05:31:32.943970", "metric": "health_agent_response_time", "value": 48.00042486190796, "tags": {"agent": "health_agent", "language": "العربية"}}
+{"timestamp": "2026-01-13T05:44:34.388937", "metric": "health_agent_response_time", "value": 10.698589086532593, "tags": {"agent": "health_agent", "language": "English"}}
+{"timestamp": "2026-01-13T05:45:08.567128", "metric": "health_agent_response_time", "value": 8.806649208068848, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-13T06:00:23.526455", "metric": "health_agent_response_time", "value": 13.468750476837158, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-13T06:00:42.076738", "metric": "health_agent_response_time", "value": 8.930576086044312, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-13T06:01:20.769674", "metric": "health_agent_response_time", "value": 6.04729151725769, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-13T06:06:20.959674", "metric": "health_agent_response_time", "value": 7.502471685409546, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-13T06:09:03.120996", "metric": "health_agent_response_time", "value": 11.28016185760498, "tags": {"agent": "health_agent", "language": "français"}}
+{"timestamp": "2026-01-13T06:09:53.471282", "metric": "health_agent_response_time", "value": 8.334439039230347, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-13T06:22:31.681082", "metric": "health_agent_response_time", "value": 14.536207675933838, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-13T06:23:04.628321", "metric": "health_agent_response_time", "value": 10.597288131713867, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-13T06:24:25.333350", "metric": "health_agent_response_time", "value": 8.606677532196045, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-13T06:25:33.098944", "metric": "health_agent_response_time", "value": 12.362922430038452, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-16T04:22:23.265241", "metric": "health_agent_response_time", "value": 38.48661804199219, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-16T04:22:43.844946", "metric": "health_agent_response_time", "value": 8.675950050354004, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-16T04:23:22.925197", "metric": "health_agent_response_time", "value": 13.858632564544678, "tags": {"agent": "health_agent", "language": "español"}}
+{"timestamp": "2026-01-17T05:08:26.025621", "metric": "risk_assessment_time", "value": 0.0010013580322265625, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T05:08:26.029641", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 29}}
+{"timestamp": "2026-01-17T05:09:15.382795", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.8, "method": "rules"}}
+{"timestamp": "2026-01-17T05:09:37.926400", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T05:09:37.926400", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 20}}
+{"timestamp": "2026-01-17T05:10:03.215385", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T05:10:03.215385", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 24}}
+{"timestamp": "2026-01-17T05:10:23.313685", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T05:10:23.313685", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 2, "query_length": 20}}
+{"timestamp": "2026-01-17T05:19:13.281641", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.8, "method": "rules"}}
+{"timestamp": "2026-01-17T05:19:32.412667", "metric": "risk_assessment_time", "value": 0.0010197162628173828, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T05:19:32.412667", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 29}}
+{"timestamp": "2026-01-17T05:20:05.200715", "metric": "risk_assessment_time", "value": 0.0010004043579101562, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T05:20:05.200715", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 24}}
+{"timestamp": "2026-01-17T05:29:15.430822", "metric": "risk_assessment_time", "value": 0.001119852066040039, "tags": {"risk_level": "HIGH", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T05:29:40.909421", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T05:29:54.094828", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.8, "method": "rules"}}
+{"timestamp": "2026-01-17T05:30:15.686717", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T05:30:15.686717", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 29}}
+{"timestamp": "2026-01-17T05:30:32.776280", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T05:30:32.776280", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 44}}
+{"timestamp": "2026-01-17T05:30:45.897463", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T05:30:45.898464", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 22}}
+{"timestamp": "2026-01-17T05:31:01.866347", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T05:31:01.866347", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 33}}
+{"timestamp": "2026-01-17T05:31:19.689327", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T05:31:19.689327", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 32}}
+{"timestamp": "2026-01-17T05:31:38.674933", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T05:31:38.674933", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 24}}
+{"timestamp": "2026-01-17T05:31:55.986146", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T05:31:55.986146", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 2, "query_length": 20}}
+{"timestamp": "2026-01-17T05:40:13.273417", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T05:40:29.832577", "metric": "risk_assessment_time", "value": 0.0010006427764892578, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T05:40:29.833578", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 21}}
+{"timestamp": "2026-01-17T05:40:47.500682", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T05:40:47.500682", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 13}}
+{"timestamp": "2026-01-17T05:53:47.510551", "metric": "risk_assessment_time", "value": 0.002002239227294922, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T05:53:47.511552", "metric": "rag_search_time", "value": 0.0010006427764892578, "tags": {"language": "es", "results_found": 2, "query_length": 21}}
+{"timestamp": "2026-01-17T05:54:07.202114", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T05:54:07.202114", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 13}}
+{"timestamp": "2026-01-17T05:54:20.734043", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T13:59:20.017279", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T13:59:44.209354", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T13:59:55.769657", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.8, "method": "rules"}}
+{"timestamp": "2026-01-17T14:00:11.026165", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.8, "method": "rules"}}
+{"timestamp": "2026-01-17T14:00:58.909880", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T14:00:58.910888", "metric": "rag_search_time", "value": 0.0010085105895996094, "tags": {"language": "es", "results_found": 2, "query_length": 29}}
+{"timestamp": "2026-01-17T14:01:13.423601", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T14:01:13.423601", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 22}}
+{"timestamp": "2026-01-17T14:01:27.401439", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:01:27.402440", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 33}}
+{"timestamp": "2026-01-17T14:01:52.113830", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:01:52.113830", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 41}}
+{"timestamp": "2026-01-17T14:02:03.609795", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T14:02:03.609795", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 20}}
+{"timestamp": "2026-01-17T14:02:16.048666", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:02:16.048666", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 32}}
+{"timestamp": "2026-01-17T14:09:21.482186", "metric": "risk_assessment_time", "value": 0.0024776458740234375, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T14:09:21.482186", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 27}}
+{"timestamp": "2026-01-17T14:09:37.033714", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:09:53.915479", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:09:53.916480", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 41}}
+{"timestamp": "2026-01-17T14:10:09.070966", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:10:09.070966", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 33}}
+{"timestamp": "2026-01-17T14:10:33.129129", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:10:33.129129", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 33}}
+{"timestamp": "2026-01-17T14:11:09.015581", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:11:09.015581", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 29}}
+{"timestamp": "2026-01-17T14:15:27.002840", "metric": "risk_assessment_time", "value": 0.0020112991333007812, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:15:27.002840", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 42}}
+{"timestamp": "2026-01-17T14:15:38.900925", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:15:38.900925", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 1, "query_length": 28}}
+{"timestamp": "2026-01-17T14:16:00.958096", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:16:00.959014", "metric": "rag_search_time", "value": 0.00013685226440429688, "tags": {"language": "en", "results_found": 2, "query_length": 31}}
+{"timestamp": "2026-01-17T14:16:18.333486", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:16:18.333486", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 41}}
+{"timestamp": "2026-01-17T14:16:39.080716", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:16:51.273909", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:17:04.704341", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:17:04.704341", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 29}}
+{"timestamp": "2026-01-17T14:17:18.149496", "metric": "risk_assessment_time", "value": 0.0010008811950683594, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:17:18.149496", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 33}}
+{"timestamp": "2026-01-17T14:17:29.555867", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:17:29.555867", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 33}}
+{"timestamp": "2026-01-17T14:17:40.891102", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:17:40.891102", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 34}}
+{"timestamp": "2026-01-17T14:17:52.021952", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:17:52.021952", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 31}}
+{"timestamp": "2026-01-17T14:17:59.844851", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T14:17:59.860491", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 2, "query_length": 29}}
+{"timestamp": "2026-01-17T14:42:41.530165", "metric": "risk_assessment_time", "value": 0.015630483627319336, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T14:42:41.530165", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 3, "query_length": 31}}
+{"timestamp": "2026-01-17T14:42:55.649571", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:42:55.649571", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 3, "query_length": 31}}
+{"timestamp": "2026-01-17T14:43:07.132684", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-17T14:43:07.132684", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 3, "query_length": 23}}
+{"timestamp": "2026-01-17T14:43:19.365530", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:43:19.365530", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 32}}
+{"timestamp": "2026-01-17T14:43:30.153666", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:43:30.153666", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 33}}
+{"timestamp": "2026-01-17T14:43:45.222435", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:43:45.222435", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 3, "query_length": 29}}
+{"timestamp": "2026-01-17T14:43:57.143374", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:43:57.143374", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 27}}
+{"timestamp": "2026-01-17T14:44:06.669334", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:44:17.866749", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:44:17.866749", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 33}}
+{"timestamp": "2026-01-17T14:44:33.302919", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-17T14:44:33.302919", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 23}}
+{"timestamp": "2026-01-17T14:44:41.922948", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T10:43:33.656583", "metric": "risk_assessment_time", "value": 0.001758575439453125, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T10:43:33.659553", "metric": "rag_search_time", "value": 5.245208740234375e-05, "tags": {"language": "en", "results_found": 3, "query_length": 41}}
+{"timestamp": "2026-01-26T10:43:40.248518", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T10:43:40.249519", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 6}}
+{"timestamp": "2026-01-26T10:44:04.626615", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T10:44:04.626615", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 3, "query_length": 3}}
+{"timestamp": "2026-01-26T10:44:25.800552", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-26T10:44:25.801553", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 3, "query_length": 23}}
+{"timestamp": "2026-01-26T10:44:32.979614", "metric": "risk_assessment_time", "value": 6.198883056640625e-05, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-26T10:44:32.979614", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 3, "query_length": 20}}
+{"timestamp": "2026-01-26T10:57:03.344257", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T10:57:03.344257", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 37}}
+{"timestamp": "2026-01-26T10:57:11.432554", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-26T10:57:11.432554", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 23}}
+{"timestamp": "2026-01-26T10:57:17.261382", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T10:57:17.261382", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 41}}
+{"timestamp": "2026-01-26T11:09:39.989030", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T11:09:39.989030", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 41}}
+{"timestamp": "2026-01-26T11:12:21.282362", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T11:12:38.788438", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T11:12:38.788438", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 34}}
+{"timestamp": "2026-01-26T11:12:49.953889", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T11:13:07.555944", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T11:13:07.555944", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 33}}
+{"timestamp": "2026-01-26T11:13:18.581135", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T11:13:29.952784", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T11:13:29.953784", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 29}}
+{"timestamp": "2026-01-26T11:14:22.688217", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T11:14:22.688217", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 33}}
+{"timestamp": "2026-01-26T11:14:31.663348", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T11:14:31.663348", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 37}}
+{"timestamp": "2026-01-26T11:14:39.945750", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T11:14:39.945750", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 1, "query_length": 38}}
+{"timestamp": "2026-01-26T11:14:50.125509", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-26T11:14:50.125509", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 23}}
+{"timestamp": "2026-01-26T11:14:55.776200", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-26T11:14:55.776200", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 2, "query_length": 30}}
+{"timestamp": "2026-01-26T11:37:01.490963", "metric": "risk_assessment_time", "value": 0.0019915103912353516, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-26T11:37:01.491964", "metric": "rag_search_time", "value": 0.0010004043579101562, "tags": {"language": "fr", "results_found": 2, "query_length": 30}}
+{"timestamp": "2026-01-26T11:42:39.268062", "metric": "risk_assessment_time", "value": 0.0075037479400634766, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T11:42:39.268062", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 34}}
+{"timestamp": "2026-01-26T11:43:02.305752", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T11:43:02.306793", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 1, "query_length": 33}}
+{"timestamp": "2026-01-26T11:43:09.808902", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T11:56:25.813831", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T11:56:36.607168", "metric": "risk_assessment_time", "value": 0.0019981861114501953, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T11:56:36.610170", "metric": "rag_search_time", "value": 0.00099945068359375, "tags": {"language": "en", "results_found": 1, "query_length": 29}}
+{"timestamp": "2026-01-26T11:56:58.766964", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T11:56:58.766964", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 34}}
+{"timestamp": "2026-01-26T12:00:16.680999", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T12:14:07.547874", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T12:14:07.547874", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 37}}
+{"timestamp": "2026-01-26T12:14:27.954397", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-26T12:14:27.955398", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 23}}
+{"timestamp": "2026-01-26T12:14:57.784762", "metric": "risk_assessment_time", "value": 0.0010006427764892578, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T12:14:57.784762", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 31}}
+{"timestamp": "2026-01-26T12:15:25.735055", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T12:15:25.735055", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 29}}
+{"timestamp": "2026-01-26T12:33:30.016683", "metric": "risk_assessment_time", "value": 0.015626192092895508, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T12:33:30.016683", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 32}}
+{"timestamp": "2026-01-26T12:33:49.141423", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T12:33:49.141423", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 28}}
+{"timestamp": "2026-01-26T12:34:03.321377", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T12:34:03.321377", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 22}}
+{"timestamp": "2026-01-26T13:24:23.203840", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T13:24:23.203840", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 22}}
+{"timestamp": "2026-01-26T13:24:46.031869", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T13:24:46.031869", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 21}}
+{"timestamp": "2026-01-26T13:25:05.766807", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T13:25:05.766807", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 3, "query_length": 23}}
+{"timestamp": "2026-01-26T13:26:22.813116", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-26T13:26:22.813116", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 3, "query_length": 25}}
+{"timestamp": "2026-01-26T13:27:09.998288", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T13:27:09.998288", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 4, "query_length": 27}}
+{"timestamp": "2026-01-26T13:28:07.950140", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T13:28:07.950140", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 20}}
+{"timestamp": "2026-01-26T13:28:34.025596", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T13:28:34.025596", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 3, "query_length": 14}}
+{"timestamp": "2026-01-26T13:28:53.173553", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T13:29:08.340050", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T13:29:08.340050", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 23}}
+{"timestamp": "2026-01-26T13:29:22.000519", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-26T13:29:22.000519", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 20}}
+{"timestamp": "2026-01-26T13:29:36.597318", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-26T13:29:36.598319", "metric": "rag_search_time", "value": 0.001001119613647461, "tags": {"language": "en", "results_found": 4, "query_length": 26}}
+{"timestamp": "2026-01-26T13:30:30.907369", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-26T13:30:30.907369", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 4, "query_length": 41}}
+{"timestamp": "2026-01-28T08:15:38.633236", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-28T08:15:38.633236", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 4, "query_length": 23}}
+{"timestamp": "2026-01-28T08:16:19.235312", "metric": "risk_assessment_time", "value": 0.0010008811950683594, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:16:19.235312", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 3, "query_length": 31}}
+{"timestamp": "2026-01-28T08:16:58.447873", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:16:58.447873", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 4, "query_length": 37}}
+{"timestamp": "2026-01-28T08:17:39.407023", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:17:39.407023", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 29}}
+{"timestamp": "2026-01-28T08:27:07.688278", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:27:07.688278", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 41}}
+{"timestamp": "2026-01-28T08:27:41.901875", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:27:41.901875", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 29}}
+{"timestamp": "2026-01-28T08:28:09.782963", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:28:38.138400", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:28:38.139401", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 34}}
+{"timestamp": "2026-01-28T08:29:24.751321", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:29:24.751321", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 25}}
+{"timestamp": "2026-01-28T08:32:32.887970", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:32:32.887970", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 44}}
+{"timestamp": "2026-01-28T08:32:55.279771", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:32:55.280771", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 38}}
+{"timestamp": "2026-01-28T08:33:19.583882", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.8, "method": "rules"}}
+{"timestamp": "2026-01-28T08:33:19.583882", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 53}}
+{"timestamp": "2026-01-28T08:33:40.891596", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:33:40.891596", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 38}}
+{"timestamp": "2026-01-28T08:34:04.111065", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-01-28T08:34:04.111065", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 34}}
+{"timestamp": "2026-01-28T08:34:23.837750", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:34:23.838725", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 37}}
+{"timestamp": "2026-01-28T08:34:43.954510", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:34:43.954510", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 43}}
+{"timestamp": "2026-01-28T08:35:12.207659", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:35:12.207659", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 27}}
+{"timestamp": "2026-01-28T08:35:33.260803", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:35:33.260803", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 32}}
+{"timestamp": "2026-01-28T08:35:54.860405", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:35:54.860405", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 38}}
+{"timestamp": "2026-01-28T08:36:25.798043", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:36:42.181611", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:36:42.181611", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 33}}
+{"timestamp": "2026-01-28T08:36:57.651252", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:36:57.651252", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 44}}
+{"timestamp": "2026-01-28T08:37:12.210251", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:37:12.212263", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 43}}
+{"timestamp": "2026-01-28T08:37:35.175264", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-01-28T08:37:35.175264", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 43}}
+{"timestamp": "2026-02-01T06:07:52.852662", "metric": "risk_assessment_time", "value": 0.0020170211791992188, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-01T06:07:52.853663", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 47}}
+{"timestamp": "2026-02-01T06:07:59.918893", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-02-01T06:07:59.918893", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 46}}
+{"timestamp": "2026-02-01T06:30:47.921120", "metric": "risk_assessment_time", "value": 0.002001523971557617, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-01T06:30:47.921120", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 47}}
+{"timestamp": "2026-02-01T06:31:13.891052", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-01T06:31:13.891052", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 42}}
+{"timestamp": "2026-02-01T06:31:34.599447", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-02-01T06:31:34.612011", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 36}}
+{"timestamp": "2026-02-01T06:32:03.745618", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-01T06:32:33.816082", "metric": "risk_assessment_time", "value": 0.0010008811950683594, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-01T06:32:33.816082", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 51}}
+{"timestamp": "2026-02-01T06:32:54.061997", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-01T06:32:54.061997", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 27}}
+{"timestamp": "2026-02-01T06:33:28.416200", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-01T06:33:28.416200", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 44}}
+{"timestamp": "2026-02-01T06:34:06.891344", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-01T06:34:06.891344", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 37}}
+{"timestamp": "2026-02-06T05:22:08.340505", "metric": "risk_assessment_time", "value": 0.0020020008087158203, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-06T05:22:08.340505", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 18}}
+{"timestamp": "2026-02-06T05:22:17.664077", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-06T05:22:17.664077", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 3}}
+{"timestamp": "2026-02-07T08:46:51.300616", "metric": "risk_assessment_time", "value": 0.0020017623901367188, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-07T08:46:51.303619", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 18}}
+{"timestamp": "2026-02-07T09:06:23.710808", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-07T09:06:23.711811", "metric": "rag_search_time", "value": 0.0010027885437011719, "tags": {"language": "en", "results_found": 0, "query_length": 13}}
+{"timestamp": "2026-02-07T09:11:43.515481", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-07T09:11:43.516484", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 41}}
+{"timestamp": "2026-02-07T09:12:43.634197", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-07T09:12:43.635701", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 44}}
+{"timestamp": "2026-02-07T09:13:31.288617", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-02-07T09:13:31.288617", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 30}}
+{"timestamp": "2026-02-07T09:14:09.411174", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-02-07T09:14:09.412677", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 42}}
+{"timestamp": "2026-02-07T09:14:44.728563", "metric": "risk_assessment_time", "value": 0.0009999275207519531, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-02-07T09:14:44.728563", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 2, "query_length": 38}}
+{"timestamp": "2026-02-07T09:15:10.613947", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-07T09:15:10.613947", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 43}}
+{"timestamp": "2026-02-07T09:15:39.599625", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-07T09:15:39.600651", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 46}}
+{"timestamp": "2026-02-07T09:16:17.343229", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-07T09:16:17.344232", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 31}}
+{"timestamp": "2026-02-07T09:16:56.863439", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-07T09:16:56.864440", "metric": "rag_search_time", "value": 0.001001119613647461, "tags": {"language": "es", "results_found": 2, "query_length": 33}}
+{"timestamp": "2026-02-07T09:18:20.310759", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-07T09:18:20.310759", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 26}}
+{"timestamp": "2026-02-07T09:18:56.048347", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-07T15:00:04.804750", "metric": "risk_assessment_time", "value": 2.4499704837799072, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-07T15:00:27.316416", "metric": "risk_assessment_time", "value": 0.8550121784210205, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-07T15:05:06.446882", "metric": "risk_assessment_time", "value": 1.3139684200286865, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-07T15:05:06.446882", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 34}}
+{"timestamp": "2026-02-07T15:05:06.446882", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 34}}
+{"timestamp": "2026-02-07T15:06:27.885242", "metric": "risk_assessment_time", "value": 2.174793004989624, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-07T15:06:27.885242", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 3, "query_length": 42}}
+{"timestamp": "2026-02-07T15:06:27.885242", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 42}}
+{"timestamp": "2026-02-07T15:07:42.243818", "metric": "risk_assessment_time", "value": 2.18367600440979, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-07T15:07:42.243818", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 42}}
+{"timestamp": "2026-02-07T15:07:42.243818", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 42}}
+{"timestamp": "2026-02-07T15:08:05.472906", "metric": "risk_assessment_time", "value": 2.19181752204895, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-07T15:08:05.473911", "metric": "rag_search_time", "value": 0.0010044574737548828, "tags": {"language": "es", "results_found": 0, "query_length": 30}}
+{"timestamp": "2026-02-07T15:08:05.473911", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 30}}
+{"timestamp": "2026-02-07T15:20:54.152909", "metric": "risk_assessment_time", "value": 5.11528205871582, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-07T15:20:54.152909", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 46}}
+{"timestamp": "2026-02-07T15:20:54.153911", "metric": "rag_search_time", "value": 0.0010027885437011719, "tags": {"language": "en", "results_found": 2, "query_length": 46}}
+{"timestamp": "2026-02-07T15:21:22.926201", "metric": "risk_assessment_time", "value": 2.208393096923828, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-07T15:21:22.926201", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 35}}
+{"timestamp": "2026-02-07T15:21:22.926201", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 35}}
+{"timestamp": "2026-02-07T15:21:57.488960", "metric": "risk_assessment_time", "value": 2.53452467918396, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-07T15:21:57.488960", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 32}}
+{"timestamp": "2026-02-07T15:21:57.488960", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 32}}
+{"timestamp": "2026-02-07T15:22:17.917143", "metric": "risk_assessment_time", "value": 2.4423763751983643, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-07T15:22:17.917143", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 38}}
+{"timestamp": "2026-02-07T15:22:17.917143", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 38}}
+{"timestamp": "2026-02-07T15:22:47.731042", "metric": "risk_assessment_time", "value": 2.432884931564331, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-07T15:22:47.731042", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 3, "query_length": 28}}
+{"timestamp": "2026-02-07T15:22:47.731042", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 2, "query_length": 28}}
+{"timestamp": "2026-02-07T15:23:15.533114", "metric": "risk_assessment_time", "value": 2.4309070110321045, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-07T15:23:15.533114", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 3, "query_length": 38}}
+{"timestamp": "2026-02-07T15:23:15.533114", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 2, "query_length": 38}}
+{"timestamp": "2026-02-07T15:23:35.807098", "metric": "risk_assessment_time", "value": 2.217020273208618, "tags": {"risk_level": "HIGH", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-07T15:23:35.807098", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 33}}
+{"timestamp": "2026-02-07T15:23:35.807098", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 33}}
+{"timestamp": "2026-02-07T15:23:56.205409", "metric": "risk_assessment_time", "value": 2.186772108078003, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-07T15:23:56.205409", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 36}}
+{"timestamp": "2026-02-07T15:23:56.205409", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 36}}
+{"timestamp": "2026-02-07T15:24:23.393618", "metric": "risk_assessment_time", "value": 2.199387550354004, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-07T15:24:23.393618", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 30}}
+{"timestamp": "2026-02-07T15:24:23.393618", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 30}}
+{"timestamp": "2026-02-07T15:25:01.977193", "metric": "risk_assessment_time", "value": 2.5191290378570557, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-07T15:25:01.977193", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 35}}
+{"timestamp": "2026-02-07T15:25:01.977193", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 35}}
+{"timestamp": "2026-02-07T15:25:21.695113", "metric": "risk_assessment_time", "value": 2.4597411155700684, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-07T15:25:21.695113", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 3, "query_length": 37}}
+{"timestamp": "2026-02-07T15:25:21.695113", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 37}}
+{"timestamp": "2026-02-16T09:14:20.860405", "metric": "risk_assessment_time", "value": 2.0632526874542236, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-16T09:14:20.860405", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 14}}
+{"timestamp": "2026-02-16T09:14:20.860405", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 14}}
+{"timestamp": "2026-02-16T09:14:31.110346", "metric": "risk_assessment_time", "value": 2.047084093093872, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-16T09:14:31.110346", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 3}}
+{"timestamp": "2026-02-16T09:14:31.110346", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 3}}
+{"timestamp": "2026-02-16T09:20:52.329746", "metric": "risk_assessment_time", "value": 2.6026451587677, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-16T09:20:52.329746", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 13}}
+{"timestamp": "2026-02-16T09:20:52.329746", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 13}}
+{"timestamp": "2026-02-16T09:23:22.634751", "metric": "risk_assessment_time", "value": 2.233464002609253, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-16T09:23:22.634751", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 37}}
+{"timestamp": "2026-02-16T09:23:22.634751", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 37}}
+{"timestamp": "2026-02-16T09:24:17.021601", "metric": "risk_assessment_time", "value": 2.2049365043640137, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-16T09:24:17.021601", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 30}}
+{"timestamp": "2026-02-16T09:24:17.021601", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 30}}
+{"timestamp": "2026-02-16T09:24:43.893601", "metric": "risk_assessment_time", "value": 2.1742377281188965, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-16T09:24:43.893601", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 3, "query_length": 45}}
+{"timestamp": "2026-02-16T09:24:43.893601", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 45}}
+{"timestamp": "2026-02-16T09:25:36.336182", "metric": "risk_assessment_time", "value": 2.334882974624634, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-16T09:25:36.336182", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 41}}
+{"timestamp": "2026-02-16T09:25:36.336182", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 41}}
+{"timestamp": "2026-02-16T09:25:54.791963", "metric": "risk_assessment_time", "value": 2.4123799800872803, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-16T09:25:54.791963", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 3, "query_length": 43}}
+{"timestamp": "2026-02-16T09:25:54.791963", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 43}}
+{"timestamp": "2026-02-16T09:26:35.251714", "metric": "risk_assessment_time", "value": 2.438633441925049, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-16T09:26:35.251714", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 3, "query_length": 36}}
+{"timestamp": "2026-02-16T09:26:35.251714", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 36}}
+{"timestamp": "2026-02-16T09:26:56.785620", "metric": "risk_assessment_time", "value": 2.5504822731018066, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-16T09:26:56.786210", "metric": "rag_search_time", "value": 0.00012183189392089844, "tags": {"language": "es", "results_found": 3, "query_length": 38}}
+{"timestamp": "2026-02-16T09:26:56.786210", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 38}}
+{"timestamp": "2026-02-16T09:27:18.265544", "metric": "risk_assessment_time", "value": 2.398513078689575, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-16T09:27:18.265544", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 38}}
+{"timestamp": "2026-02-16T09:27:18.265544", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 2, "query_length": 38}}
+{"timestamp": "2026-02-16T09:27:47.731226", "metric": "risk_assessment_time", "value": 2.6168301105499268, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-16T09:27:47.731226", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 3, "query_length": 36}}
+{"timestamp": "2026-02-16T09:27:47.731226", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 36}}
+{"timestamp": "2026-02-16T09:28:24.587235", "metric": "risk_assessment_time", "value": 2.3989810943603516, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-16T09:28:24.587235", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 38}}
+{"timestamp": "2026-02-16T09:28:24.587235", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 38}}
+{"timestamp": "2026-02-16T09:28:50.686793", "metric": "risk_assessment_time", "value": 2.2175374031066895, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-16T09:28:50.687795", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 22}}
+{"timestamp": "2026-02-16T09:28:50.687795", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 22}}
+{"timestamp": "2026-02-16T09:29:29.390667", "metric": "risk_assessment_time", "value": 2.2680559158325195, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-16T09:29:29.390667", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 20}}
+{"timestamp": "2026-02-16T09:29:29.390667", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 20}}
+{"timestamp": "2026-02-16T10:38:28.999263", "metric": "risk_assessment_time", "value": 4.501725673675537, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-16T10:43:34.481918", "metric": "risk_assessment_time", "value": 4.919286251068115, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-16T10:43:34.481918", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 35}}
+{"timestamp": "2026-02-16T10:44:04.067308", "metric": "risk_assessment_time", "value": 1.7684307098388672, "tags": {"risk_level": "HIGH", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-16T10:44:04.067308", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 3, "query_length": 42}}
+{"timestamp": "2026-02-16T10:49:45.117885", "metric": "risk_assessment_time", "value": 4.590018272399902, "tags": {"risk_level": "HIGH", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-16T10:49:45.117885", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 42}}
+{"timestamp": "2026-02-16T10:52:09.280576", "metric": "risk_assessment_time", "value": 4.125247240066528, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-16T10:52:09.280576", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 2, "query_length": 44}}
+{"timestamp": "2026-02-16T10:52:53.695817", "metric": "risk_assessment_time", "value": 4.472287178039551, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-16T10:52:53.695817", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 31}}
+{"timestamp": "2026-02-22T13:25:13.625083", "metric": "risk_assessment_time", "value": 2.6498634815216064, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-22T13:25:13.625083", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 18}}
+{"timestamp": "2026-02-22T13:25:35.313623", "metric": "risk_assessment_time", "value": 2.4047036170959473, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-22T13:25:35.313623", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 15}}
+{"timestamp": "2026-02-24T13:16:14.895020", "metric": "risk_assessment_time", "value": 2.353076219558716, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-24T13:16:14.896021", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 44}}
+{"timestamp": "2026-02-24T13:16:34.667849", "metric": "risk_assessment_time", "value": 2.217773675918579, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-24T13:16:34.667849", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 44}}
+{"timestamp": "2026-02-24T13:16:54.130587", "metric": "risk_assessment_time", "value": 2.6099371910095215, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-24T13:16:54.130587", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 39}}
+{"timestamp": "2026-02-24T13:17:14.002377", "metric": "risk_assessment_time", "value": 2.476245641708374, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-24T13:17:14.002377", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 36}}
+{"timestamp": "2026-02-24T13:17:41.391479", "metric": "risk_assessment_time", "value": 2.6208231449127197, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-24T13:17:41.391479", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 42}}
+{"timestamp": "2026-02-24T13:18:04.566147", "metric": "risk_assessment_time", "value": 2.3966848850250244, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-24T13:18:04.566147", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 29}}
+{"timestamp": "2026-02-24T13:18:56.332157", "metric": "risk_assessment_time", "value": 2.3829500675201416, "tags": {"risk_level": "HIGH", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-24T13:18:56.332157", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 52}}
+{"timestamp": "2026-02-24T13:19:22.692453", "metric": "risk_assessment_time", "value": 2.5682387351989746, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-24T13:19:22.692453", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 47}}
+{"timestamp": "2026-02-24T13:19:47.978330", "metric": "risk_assessment_time", "value": 2.205437421798706, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-24T13:19:47.978330", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 47}}
+{"timestamp": "2026-02-24T13:20:22.510344", "metric": "risk_assessment_time", "value": 2.208606243133545, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-24T13:20:22.510344", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 22}}
+{"timestamp": "2026-02-25T06:31:37.348059", "metric": "risk_assessment_time", "value": 23.189406156539917, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-25T06:31:37.349061", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 13}}
+{"timestamp": "2026-02-25T06:36:26.231278", "metric": "risk_assessment_time", "value": 3.8784561157226562, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-25T06:36:26.231366", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 39}}
+{"timestamp": "2026-02-25T06:37:04.372790", "metric": "risk_assessment_time", "value": 4.0139384269714355, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-25T06:37:04.372790", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 47}}
+{"timestamp": "2026-02-25T06:39:50.720241", "metric": "risk_assessment_time", "value": 4.010488033294678, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-25T06:39:50.720241", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 42}}
+{"timestamp": "2026-02-25T06:40:46.305458", "metric": "risk_assessment_time", "value": 4.8407862186431885, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-25T06:40:46.305458", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 2, "query_length": 44}}
+{"timestamp": "2026-02-25T06:41:24.110337", "metric": "risk_assessment_time", "value": 4.821557521820068, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-25T06:41:24.110337", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 36}}
+{"timestamp": "2026-02-25T06:41:57.083436", "metric": "risk_assessment_time", "value": 4.791705369949341, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-25T06:41:57.083436", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 45}}
+{"timestamp": "2026-02-25T06:43:16.584403", "metric": "risk_assessment_time", "value": 4.538719415664673, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-25T06:43:16.584403", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 44}}
+{"timestamp": "2026-02-25T06:44:06.766865", "metric": "risk_assessment_time", "value": 4.744497299194336, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-25T06:44:06.766865", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 39}}
+{"timestamp": "2026-02-25T06:44:48.527416", "metric": "risk_assessment_time", "value": 4.386803865432739, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-25T06:44:48.527952", "metric": "rag_search_time", "value": 0.0005362033843994141, "tags": {"language": "es", "results_found": 2, "query_length": 41}}
+{"timestamp": "2026-02-25T06:45:48.075101", "metric": "risk_assessment_time", "value": 4.511829614639282, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-25T06:45:48.075101", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 31}}
+{"timestamp": "2026-02-25T06:56:08.093720", "metric": "risk_assessment_time", "value": 4.899052143096924, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-25T06:56:08.093720", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 28}}
+{"timestamp": "2026-02-25T06:56:46.491613", "metric": "risk_assessment_time", "value": 4.597743272781372, "tags": {"risk_level": "HIGH", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-25T06:56:46.491613", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 23}}
+{"timestamp": "2026-02-25T06:58:49.761899", "metric": "risk_assessment_time", "value": 4.99228835105896, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-25T06:58:49.761899", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 18}}
+{"timestamp": "2026-02-25T06:59:33.714831", "metric": "risk_assessment_time", "value": 4.57412314414978, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-25T06:59:33.714831", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 37}}
+{"timestamp": "2026-02-25T07:00:18.192436", "metric": "risk_assessment_time", "value": 3.574902057647705, "tags": {"risk_level": "HIGH", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-25T07:00:18.192436", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 60}}
+{"timestamp": "2026-02-27T13:20:00.558745", "metric": "risk_assessment_time", "value": 22.113662481307983, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-27T13:20:00.558745", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 18}}
+{"timestamp": "2026-02-27T13:20:34.137190", "metric": "risk_assessment_time", "value": 2.40470552444458, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-27T13:20:34.137190", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 47}}
+{"timestamp": "2026-02-27T13:21:18.226676", "metric": "risk_assessment_time", "value": 2.5381319522857666, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-27T13:21:18.226676", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 2, "query_length": 38}}
+{"timestamp": "2026-02-27T13:21:45.277723", "metric": "risk_assessment_time", "value": 2.544743537902832, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-27T13:21:45.277723", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 31}}
+{"timestamp": "2026-02-27T13:22:12.395456", "metric": "risk_assessment_time", "value": 2.2156059741973877, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-27T13:22:12.396074", "metric": "rag_search_time", "value": 0.0006182193756103516, "tags": {"language": "es", "results_found": 2, "query_length": 41}}
+{"timestamp": "2026-02-27T13:22:50.698047", "metric": "risk_assessment_time", "value": 2.245485544204712, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-27T13:22:50.698047", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 44}}
+{"timestamp": "2026-02-27T13:23:23.029739", "metric": "risk_assessment_time", "value": 2.451730251312256, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-27T13:23:23.029739", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 2, "query_length": 35}}
+{"timestamp": "2026-02-27T13:23:58.603645", "metric": "risk_assessment_time", "value": 2.5806658267974854, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-27T13:23:58.603645", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 44}}
+{"timestamp": "2026-02-27T13:24:21.653543", "metric": "risk_assessment_time", "value": 2.398817777633667, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-27T13:24:21.653543", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 42}}
+{"timestamp": "2026-02-27T13:57:12.345652", "metric": "risk_assessment_time", "value": 5.257286310195923, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-27T13:57:12.345652", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 38}}
+{"timestamp": "2026-02-27T13:58:00.025198", "metric": "risk_assessment_time", "value": 4.825440168380737, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-27T13:58:00.025198", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 25}}
+{"timestamp": "2026-02-27T13:58:47.405674", "metric": "risk_assessment_time", "value": 4.878699064254761, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-27T13:58:47.405674", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 65}}
+{"timestamp": "2026-02-27T14:00:19.915715", "metric": "risk_assessment_time", "value": 4.670856952667236, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-27T14:00:19.915715", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 32}}
+{"timestamp": "2026-02-27T14:01:11.155825", "metric": "risk_assessment_time", "value": 5.014570713043213, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-27T14:01:11.155825", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 44}}
+{"timestamp": "2026-02-27T14:01:45.342943", "metric": "risk_assessment_time", "value": 4.529851675033569, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-02-27T14:01:45.342943", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 31}}
+{"timestamp": "2026-02-27T14:10:20.088348", "metric": "risk_assessment_time", "value": 4.232406139373779, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-02-27T14:10:20.088348", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 43}}
+{"timestamp": "2026-02-27T14:22:37.141188", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-27T14:22:37.141188", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 0, "query_length": 13}}
+{"timestamp": "2026-02-27T14:23:23.110274", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-27T14:37:52.256756", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-27T14:41:17.635470", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-27T14:42:34.859846", "metric": "risk_assessment_time", "value": 0.0010008811950683594, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-27T14:42:34.859846", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 26}}
+{"timestamp": "2026-02-27T14:42:57.375984", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.7, "method": "rules"}}
+{"timestamp": "2026-02-27T14:43:40.563489", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-27T14:43:40.563489", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 32}}
+{"timestamp": "2026-02-27T14:44:14.266204", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-27T14:44:14.266204", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 34}}
+{"timestamp": "2026-02-27T14:45:25.203484", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-27T14:46:07.563168", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-27T14:46:41.547182", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-27T14:46:41.547182", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 2, "query_length": 45}}
+{"timestamp": "2026-02-27T14:47:21.756638", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-27T14:47:21.756638", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 29}}
+{"timestamp": "2026-02-27T14:48:01.684401", "metric": "risk_assessment_time", "value": 0.001001119613647461, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-27T14:48:01.684401", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 1, "query_length": 38}}
+{"timestamp": "2026-02-27T14:48:38.665687", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-27T14:58:45.234851", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "confidence": 0.6, "method": "rules"}}
+{"timestamp": "2026-02-27T14:58:45.234851", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 1, "query_length": 38}}
+{"timestamp": "2026-03-01T23:10:52.607955", "metric": "risk_assessment_time", "value": 2.2520880699157715, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-03-01T23:10:52.607955", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 61}}
+{"timestamp": "2026-03-01T23:11:37.492366", "metric": "risk_assessment_time", "value": 2.573317527770996, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-03-01T23:11:37.492366", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 69}}
+{"timestamp": "2026-03-01T23:11:57.059690", "metric": "risk_assessment_time", "value": 2.1560065746307373, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-03-01T23:11:57.060197", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 42}}
+{"timestamp": "2026-03-01T23:12:18.317103", "metric": "risk_assessment_time", "value": 2.2376821041107178, "tags": {"risk_level": "HIGH", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-03-01T23:12:18.317103", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 66}}
+{"timestamp": "2026-03-01T23:12:43.540577", "metric": "risk_assessment_time", "value": 2.1486618518829346, "tags": {"risk_level": "HIGH", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-03-01T23:12:43.541080", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 62}}
+{"timestamp": "2026-03-01T23:13:11.216751", "metric": "risk_assessment_time", "value": 2.4836270809173584, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-03-01T23:13:11.216751", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 53}}
+{"timestamp": "2026-03-01T23:13:47.593045", "metric": "risk_assessment_time", "value": 2.37274169921875, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-03-01T23:13:47.593045", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 53}}
+{"timestamp": "2026-03-01T23:14:10.065639", "metric": "risk_assessment_time", "value": 2.5822980403900146, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-03-01T23:14:10.065639", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 39}}
+{"timestamp": "2026-03-01T23:14:35.956630", "metric": "risk_assessment_time", "value": 2.172900676727295, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-03-01T23:14:35.956630", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 62}}
+{"timestamp": "2026-03-01T23:15:05.595433", "metric": "risk_assessment_time", "value": 2.290915012359619, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-03-01T23:15:05.595433", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 2, "query_length": 54}}
+{"timestamp": "2026-03-01T23:15:31.843049", "metric": "risk_assessment_time", "value": 2.354694366455078, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-03-01T23:15:31.843049", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 17}}
+{"timestamp": "2026-03-01T23:44:20.523512", "metric": "risk_assessment_time", "value": 4.7401039600372314, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-03-01T23:44:20.523512", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 61}}
+{"timestamp": "2026-03-01T23:45:22.669825", "metric": "risk_assessment_time", "value": 3.699176549911499, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-03-01T23:45:22.669825", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 2, "query_length": 54}}
+{"timestamp": "2026-03-01T23:46:48.348478", "metric": "risk_assessment_time", "value": 4.778745651245117, "tags": {"risk_level": "MEDIUM", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-03-01T23:46:48.348478", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 53}}
+{"timestamp": "2026-03-01T23:47:38.963035", "metric": "risk_assessment_time", "value": 4.4462950229644775, "tags": {"risk_level": "HIGH", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-03-01T23:47:38.963035", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 62}}
+{"timestamp": "2026-03-01T23:47:42.386276", "metric": "risk_assessment_time", "value": 1.3817970752716064, "tags": {"risk_level": "HIGH", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-03-01T23:47:42.386276", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 44}}
+{"timestamp": "2026-03-01T23:48:20.856953", "metric": "risk_assessment_time", "value": 4.4855687618255615, "tags": {"risk_level": "LOW", "confidence": 0.7, "method": "llm"}}
+{"timestamp": "2026-03-01T23:48:20.856953", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 18}}
+{"timestamp": "2026-03-01T23:49:40.286517", "metric": "risk_assessment_time", "value": 3.9924230575561523, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-03-01T23:49:40.286517", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 44}}
+{"timestamp": "2026-03-01T23:51:04.952674", "metric": "risk_assessment_time", "value": 4.992791652679443, "tags": {"risk_level": "MEDIUM", "confidence": 0.6, "method": "llm"}}
+{"timestamp": "2026-03-01T23:51:04.952674", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 53}}
+{"timestamp": "2026-03-02T07:11:06.958875", "metric": "risk_assessment_time", "value": 4.355734348297119, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-02T07:11:06.959876", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 31}}
+{"timestamp": "2026-03-02T07:13:46.589779", "metric": "risk_assessment_time", "value": 2.586597442626953, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-02T07:13:46.589779", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 56}}
+{"timestamp": "2026-03-02T07:14:16.691636", "metric": "risk_assessment_time", "value": 3.1782548427581787, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-02T07:14:16.691636", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 53}}
+{"timestamp": "2026-03-02T07:14:55.386696", "metric": "risk_assessment_time", "value": 2.9850473403930664, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-02T07:14:55.386696", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 41}}
+{"timestamp": "2026-03-02T07:15:39.519491", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.93, "method": "rules", "rule_matched": "high_fever_prolonged", "category": "high"}}
+{"timestamp": "2026-03-02T07:15:39.519491", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 2, "query_length": 54}}
+{"timestamp": "2026-03-02T07:16:20.954751", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.85, "method": "rules", "rule_matched": "blood_symptoms_non_emergency", "category": "high"}}
+{"timestamp": "2026-03-02T07:16:20.954751", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 30}}
+{"timestamp": "2026-03-02T07:16:46.819195", "metric": "risk_assessment_time", "value": 3.4315216541290283, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-02T07:16:46.819637", "metric": "rag_search_time", "value": 0.0003581047058105469, "tags": {"language": "es", "results_found": 0, "query_length": 34}}
+{"timestamp": "2026-03-02T07:17:33.482783", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": true, "confidence": 0.86, "method": "rules", "rule_matched": "medication_dosage_request", "category": "high"}}
+{"timestamp": "2026-03-02T07:17:33.483785", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 34}}
+{"timestamp": "2026-03-02T07:17:49.562978", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": true, "confidence": 0.82, "method": "rules", "rule_matched": "mental_health_moderate", "category": "medium"}}
+{"timestamp": "2026-03-02T07:17:49.563453", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 44}}
+{"timestamp": "2026-03-02T07:18:34.768194", "metric": "risk_assessment_time", "value": 0.0010018348693847656, "tags": {"risk_level": "LOW", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.85, "method": "rules", "rule_matched": "information_request", "category": "low"}}
+{"timestamp": "2026-03-02T07:18:34.768194", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 18}}
+{"timestamp": "2026-03-02T07:19:07.843073", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.89, "method": "rules", "rule_matched": "fever_high_child", "category": "high"}}
+{"timestamp": "2026-03-02T07:19:07.844074", "metric": "rag_search_time", "value": 0.001001119613647461, "tags": {"language": "es", "results_found": 0, "query_length": 53}}
+{"timestamp": "2026-03-02T07:19:57.032593", "metric": "risk_assessment_time", "value": 2.933750629425049, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-02T07:19:57.032593", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 38}}
+{"timestamp": "2026-03-02T07:20:43.880360", "metric": "risk_assessment_time", "value": 3.053046464920044, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-02T07:20:43.880360", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 35}}
+{"timestamp": "2026-03-02T07:32:24.267432", "metric": "risk_assessment_time", "value": 4.923466444015503, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-02T07:32:24.267432", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 31}}
+{"timestamp": "2026-03-04T10:58:00.148728", "metric": "risk_assessment_time", "value": 21.242125272750854, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.59, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T10:58:00.148728", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 61}}
+{"timestamp": "2026-03-04T11:25:11.151370", "metric": "risk_assessment_time", "value": 24.639657497406006, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T11:25:11.151370", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 31}}
+{"timestamp": "2026-03-04T11:25:40.109451", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.93, "method": "rules", "rule_matched": "high_fever_prolonged", "category": "high"}}
+{"timestamp": "2026-03-04T11:25:40.109451", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 51}}
+{"timestamp": "2026-03-04T11:25:54.080094", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.85, "method": "rules", "rule_matched": "blood_symptoms_non_emergency", "category": "high"}}
+{"timestamp": "2026-03-04T11:25:54.080094", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 30}}
+{"timestamp": "2026-03-04T11:26:05.327099", "metric": "risk_assessment_time", "value": 1.9123833179473877, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.63, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T11:26:05.327099", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 34}}
+{"timestamp": "2026-03-04T11:26:20.186784", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": true, "confidence": 0.86, "method": "rules", "rule_matched": "medication_dosage_request", "category": "high"}}
+{"timestamp": "2026-03-04T11:26:20.187784", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 34}}
+{"timestamp": "2026-03-04T11:26:26.574903", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": true, "confidence": 0.82, "method": "rules", "rule_matched": "mental_health_moderate", "category": "medium"}}
+{"timestamp": "2026-03-04T11:26:26.575904", "metric": "rag_search_time", "value": 0.0010004043579101562, "tags": {"language": "es", "results_found": 1, "query_length": 44}}
+{"timestamp": "2026-03-04T11:26:47.010644", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "LOW", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.85, "method": "rules", "rule_matched": "information_request", "category": "low"}}
+{"timestamp": "2026-03-04T11:26:47.010644", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 18}}
+{"timestamp": "2026-03-04T11:27:08.150113", "metric": "risk_assessment_time", "value": 1.8897697925567627, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T11:27:08.150113", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 24}}
+{"timestamp": "2026-03-04T11:43:00.483491", "metric": "risk_assessment_time", "value": 2.0768260955810547, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T11:43:00.487496", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 37}}
+{"timestamp": "2026-03-04T11:43:25.989574", "metric": "risk_assessment_time", "value": 1.8905198574066162, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T11:43:25.989574", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 48}}
+{"timestamp": "2026-03-04T11:43:44.365599", "metric": "risk_assessment_time", "value": 1.6942503452301025, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.59, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T11:43:44.365599", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 28}}
+{"timestamp": "2026-03-04T11:44:02.348422", "metric": "risk_assessment_time", "value": 1.8464875221252441, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.59, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T11:44:02.348422", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 35}}
+{"timestamp": "2026-03-04T11:44:44.048359", "metric": "risk_assessment_time", "value": 2.6986031532287598, "tags": {"risk_level": "LOW", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T11:44:44.048868", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 43}}
+{"timestamp": "2026-03-04T11:45:27.982467", "metric": "risk_assessment_time", "value": 2.017270803451538, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.63, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T11:45:27.982467", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 34}}
+{"timestamp": "2026-03-04T11:45:56.617665", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": true, "confidence": 0.86, "method": "rules", "rule_matched": "mental_health_moderate", "category": "medium"}}
+{"timestamp": "2026-03-04T11:45:56.618664", "metric": "rag_search_time", "value": 0.0009996891021728516, "tags": {"language": "es", "results_found": 2, "query_length": 40}}
+{"timestamp": "2026-03-04T11:46:11.502778", "metric": "risk_assessment_time", "value": 1.703233003616333, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": true, "confidence": 0.52, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T11:46:11.502778", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 19}}
+{"timestamp": "2026-03-04T11:46:28.472419", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.85, "method": "rules", "rule_matched": "blood_symptoms_non_emergency", "category": "high"}}
+{"timestamp": "2026-03-04T11:46:28.472419", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 30}}
+{"timestamp": "2026-03-04T11:46:45.010397", "metric": "risk_assessment_time", "value": 1.5484035015106201, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T11:46:45.010397", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 0, "query_length": 17}}
+{"timestamp": "2026-03-04T12:07:36.954313", "metric": "risk_assessment_time", "value": 2.9178054332733154, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T12:07:36.955313", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 24}}
+{"timestamp": "2026-03-04T12:08:08.052414", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": true, "confidence": 0.82, "method": "rules", "rule_matched": "mental_health_moderate", "category": "medium"}}
+{"timestamp": "2026-03-04T12:08:08.052414", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 21}}
+{"timestamp": "2026-03-04T12:09:16.775423", "metric": "risk_assessment_time", "value": 1.7634778022766113, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.59, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T12:09:16.775423", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 28}}
+{"timestamp": "2026-03-04T12:09:57.660172", "metric": "risk_assessment_time", "value": 1.7613329887390137, "tags": {"risk_level": "LOW", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T12:09:57.660172", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 24}}
+{"timestamp": "2026-03-04T12:10:40.405570", "metric": "risk_assessment_time", "value": 1.590912103652954, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": true, "confidence": 0.52, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T12:10:40.405570", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 19}}
+{"timestamp": "2026-03-04T12:22:51.125201", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 24}}
+{"timestamp": "2026-03-04T12:23:21.371692", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 24}}
+{"timestamp": "2026-03-04T12:23:57.819208", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 28}}
+{"timestamp": "2026-03-04T12:24:22.315549", "metric": "risk_assessment_time", "value": 2.6751580238342285, "tags": {"risk_level": "LOW", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T12:24:22.315549", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 43}}
+{"timestamp": "2026-03-04T12:24:43.802789", "metric": "risk_assessment_time", "value": 1.8716881275177002, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.59, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T12:24:43.802789", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 35}}
+{"timestamp": "2026-03-04T12:25:12.523167", "metric": "risk_assessment_time", "value": 1.6545298099517822, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T12:25:12.523167", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 30}}
+{"timestamp": "2026-03-04T12:26:01.123565", "metric": "risk_assessment_time", "value": 1.6829328536987305, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-04T12:26:01.123565", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 0, "query_length": 17}}
+{"timestamp": "2026-03-09T08:11:08.441918", "metric": "risk_assessment_time", "value": 3.8935372829437256, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:11:08.441918", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 50}}
+{"timestamp": "2026-03-09T08:14:30.955100", "metric": "risk_assessment_time", "value": 1.6986217498779297, "tags": {"risk_level": "LOW", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:14:30.955100", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 44}}
+{"timestamp": "2026-03-09T08:15:41.914942", "metric": "risk_assessment_time", "value": 1.991086721420288, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.59, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:15:41.914942", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 93}}
+{"timestamp": "2026-03-09T08:16:11.634026", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.85, "method": "rules", "rule_matched": "chronic_condition_question", "category": "medium"}}
+{"timestamp": "2026-03-09T08:16:11.634026", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 61}}
+{"timestamp": "2026-03-09T08:19:12.241817", "metric": "risk_assessment_time", "value": 1.966949701309204, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.59, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:19:12.241817", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 46}}
+{"timestamp": "2026-03-09T08:19:38.616969", "metric": "risk_assessment_time", "value": 1.9742038249969482, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:19:38.616969", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 54}}
+{"timestamp": "2026-03-09T08:20:07.499796", "metric": "risk_assessment_time", "value": 2.4629433155059814, "tags": {"risk_level": "LOW", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:20:07.499796", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 38}}
+{"timestamp": "2026-03-09T08:21:25.291009", "metric": "risk_assessment_time", "value": 1.571399450302124, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:21:25.291009", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 59}}
+{"timestamp": "2026-03-09T08:21:44.096934", "metric": "risk_assessment_time", "value": 1.5342826843261719, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:21:44.096934", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 46}}
+{"timestamp": "2026-03-09T08:21:57.133907", "metric": "risk_assessment_time", "value": 2.2169880867004395, "tags": {"risk_level": "LOW", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:21:57.133907", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 31}}
+{"timestamp": "2026-03-09T08:22:23.738429", "metric": "risk_assessment_time", "value": 1.6911299228668213, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:22:23.738429", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 53}}
+{"timestamp": "2026-03-09T08:22:40.709503", "metric": "risk_assessment_time", "value": 1.4780490398406982, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:22:40.709503", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 45}}
+{"timestamp": "2026-03-09T08:23:18.033469", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.85, "method": "rules", "rule_matched": "chronic_condition_question", "category": "medium"}}
+{"timestamp": "2026-03-09T08:23:18.033469", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 2, "query_length": 34}}
+{"timestamp": "2026-03-09T08:42:27.368766", "metric": "risk_assessment_time", "value": 3.6745645999908447, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.59, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:42:27.368766", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 58}}
+{"timestamp": "2026-03-09T08:43:16.722713", "metric": "risk_assessment_time", "value": 2.9250669479370117, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:43:16.722713", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 45}}
+{"timestamp": "2026-03-09T08:43:52.909562", "metric": "risk_assessment_time", "value": 2.5334606170654297, "tags": {"risk_level": "LOW", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:43:52.909562", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 25}}
+{"timestamp": "2026-03-09T08:44:37.961611", "metric": "risk_assessment_time", "value": 3.4011034965515137, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.63, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:44:37.961611", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 63}}
+{"timestamp": "2026-03-09T08:45:07.750067", "metric": "risk_assessment_time", "value": 2.5468103885650635, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:45:07.750067", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 44}}
+{"timestamp": "2026-03-09T08:45:38.479916", "metric": "risk_assessment_time", "value": 2.591446876525879, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:45:38.479916", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 56}}
+{"timestamp": "2026-03-09T08:46:34.279175", "metric": "risk_assessment_time", "value": 3.2878661155700684, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:46:34.279175", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 38}}
+{"timestamp": "2026-03-09T08:46:58.166372", "metric": "risk_assessment_time", "value": 3.662767171859741, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:46:58.166372", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 44}}
+{"timestamp": "2026-03-09T08:47:21.510509", "metric": "risk_assessment_time", "value": 3.255380630493164, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:47:21.510509", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 44}}
+{"timestamp": "2026-03-09T08:47:53.043261", "metric": "risk_assessment_time", "value": 2.6723318099975586, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.63, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:47:53.043261", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 94}}
+{"timestamp": "2026-03-09T08:48:09.864796", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.93, "method": "rules", "rule_matched": "skin_rash_days", "category": "medium"}}
+{"timestamp": "2026-03-09T08:48:09.864796", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 48}}
+{"timestamp": "2026-03-09T08:48:50.999341", "metric": "risk_assessment_time", "value": 3.656027317047119, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:48:50.999341", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 21}}
+{"timestamp": "2026-03-09T08:49:49.158336", "metric": "risk_assessment_time", "value": 4.4978187084198, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:49:49.158336", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 2, "query_length": 34}}
+{"timestamp": "2026-03-09T08:50:48.279289", "metric": "risk_assessment_time", "value": 3.3461833000183105, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.59, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T08:50:48.279289", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 38}}
+{"timestamp": "2026-03-09T09:03:39.156287", "metric": "risk_assessment_time", "value": 4.593440294265747, "tags": {"risk_level": "LOW", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.59, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T09:03:39.156287", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 29}}
+{"timestamp": "2026-03-09T09:04:18.227004", "metric": "risk_assessment_time", "value": 1.968287467956543, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T09:04:18.227004", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 28}}
+{"timestamp": "2026-03-09T09:04:36.892277", "metric": "risk_assessment_time", "value": 2.778895378112793, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T09:04:36.892277", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 45}}
+{"timestamp": "2026-03-09T09:05:32.171108", "metric": "risk_assessment_time", "value": 3.5061917304992676, "tags": {"risk_level": "LOW", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T09:05:32.171108", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 25}}
+{"timestamp": "2026-03-09T09:05:57.737078", "metric": "risk_assessment_time", "value": 4.467204570770264, "tags": {"risk_level": "LOW", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T09:05:57.737078", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 20}}
+{"timestamp": "2026-03-09T09:15:14.357033", "metric": "risk_assessment_time", "value": 4.599010229110718, "tags": {"risk_level": "LOW", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.59, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T09:15:14.357033", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 29}}
+{"timestamp": "2026-03-09T09:15:47.671900", "metric": "risk_assessment_time", "value": 3.598903179168701, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T09:15:47.671900", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 28}}
+{"timestamp": "2026-03-09T09:16:07.765123", "metric": "risk_assessment_time", "value": 2.8872780799865723, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T09:16:07.765123", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 45}}
+{"timestamp": "2026-03-09T09:16:42.779438", "metric": "risk_assessment_time", "value": 4.681220054626465, "tags": {"risk_level": "LOW", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T09:16:42.779438", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 25}}
+{"timestamp": "2026-03-09T09:17:04.867933", "metric": "risk_assessment_time", "value": 3.2632293701171875, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.63, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T09:17:04.867933", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 63}}
+{"timestamp": "2026-03-09T09:17:34.766902", "metric": "risk_assessment_time", "value": 1.7355988025665283, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T09:17:34.766902", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 44}}
+{"timestamp": "2026-03-09T09:18:16.315183", "metric": "risk_assessment_time", "value": 2.6109232902526855, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T09:18:16.315183", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 38}}
+{"timestamp": "2026-03-09T09:18:34.880130", "metric": "risk_assessment_time", "value": 3.573772430419922, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T09:18:34.880130", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 44}}
+{"timestamp": "2026-03-09T09:19:32.015085", "metric": "risk_assessment_time", "value": 3.341224431991577, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T09:19:32.015085", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 44}}
+{"timestamp": "2026-03-09T09:20:16.013729", "metric": "risk_assessment_time", "value": 2.9372010231018066, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.59, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T09:20:16.013729", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 51}}
+{"timestamp": "2026-03-09T09:20:42.973522", "metric": "risk_assessment_time", "value": 3.4714319705963135, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T09:20:42.973522", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 38}}
+{"timestamp": "2026-03-09T09:21:01.646198", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.93, "method": "rules", "rule_matched": "skin_rash_days", "category": "medium"}}
+{"timestamp": "2026-03-09T09:21:01.646198", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 48}}
+{"timestamp": "2026-03-09T09:21:20.494854", "metric": "risk_assessment_time", "value": 2.841853141784668, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T09:21:20.494854", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 21}}
+{"timestamp": "2026-03-09T09:21:48.521627", "metric": "risk_assessment_time", "value": 4.57452392578125, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T09:21:48.521627", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 2, "query_length": 34}}
+{"timestamp": "2026-03-09T09:22:11.706633", "metric": "risk_assessment_time", "value": 2.862912893295288, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.59, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T09:22:11.706633", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "en", "results_found": 1, "query_length": 38}}
+{"timestamp": "2026-03-09T11:52:39.243757", "metric": "risk_assessment_time", "value": 4.618026256561279, "tags": {"risk_level": "LOW", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.59, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T11:52:39.244761", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 29}}
+{"timestamp": "2026-03-09T11:53:15.514232", "metric": "risk_assessment_time", "value": 3.650324821472168, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T11:53:15.514232", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 28}}
+{"timestamp": "2026-03-09T11:53:32.374572", "metric": "risk_assessment_time", "value": 0.0, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.89, "method": "rules", "rule_matched": "fever_high_child", "category": "high"}}
+{"timestamp": "2026-03-09T11:53:32.374572", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 28}}
+{"timestamp": "2026-03-09T11:53:58.741009", "metric": "risk_assessment_time", "value": 2.7883617877960205, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.59, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T11:53:58.741009", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 51}}
+{"timestamp": "2026-03-09T11:54:45.681313", "metric": "risk_assessment_time", "value": 0.0010018348693847656, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.93, "method": "rules", "rule_matched": "skin_rash_days", "category": "medium"}}
+{"timestamp": "2026-03-09T11:54:45.681313", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 73}}
+{"timestamp": "2026-03-09T11:55:20.658990", "metric": "risk_assessment_time", "value": 3.111358642578125, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T11:55:20.658990", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 25}}
+{"timestamp": "2026-03-09T11:55:44.137770", "metric": "risk_assessment_time", "value": 2.50287127494812, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.59, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T11:55:44.137770", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 45}}
+{"timestamp": "2026-03-09T11:56:01.758843", "metric": "risk_assessment_time", "value": 3.2690579891204834, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T11:56:01.758843", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 38}}
+{"timestamp": "2026-03-09T11:56:21.563897", "metric": "risk_assessment_time", "value": 2.9948649406433105, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T11:56:21.563897", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 44}}
+{"timestamp": "2026-03-09T11:56:42.266159", "metric": "risk_assessment_time", "value": 3.576416015625, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T11:56:42.266159", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 44}}
+{"timestamp": "2026-03-09T11:57:15.483925", "metric": "risk_assessment_time", "value": 1.706411361694336, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.63, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T11:57:15.483925", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 0, "query_length": 33}}
+{"timestamp": "2026-03-09T11:57:33.301070", "metric": "risk_assessment_time", "value": 4.523491621017456, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.55, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T11:57:33.301070", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 2, "query_length": 38}}
+{"timestamp": "2026-03-09T11:57:55.970172", "metric": "risk_assessment_time", "value": 2.9016337394714355, "tags": {"risk_level": "MEDIUM", "is_medical_urgent": false, "is_safety_sensitive": false, "confidence": 0.63, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T11:57:55.970172", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "es", "results_found": 1, "query_length": 30}}
+{"timestamp": "2026-03-09T11:58:18.975727", "metric": "risk_assessment_time", "value": 4.446784496307373, "tags": {"risk_level": "HIGH", "is_medical_urgent": true, "is_safety_sensitive": false, "confidence": 0.63, "method": "llm_fallback", "rule_matched": "llm", "category": "general"}}
+{"timestamp": "2026-03-09T11:58:18.975727", "metric": "rag_search_time", "value": 0.0, "tags": {"language": "fr", "results_found": 2, "query_length": 34}}

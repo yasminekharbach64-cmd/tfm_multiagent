@@ -16,32 +16,32 @@ class ResponseNormalizer:
     """
     
     def __init__(self):
-        # Diagnostic words that should NOT appear in responses
+        
         self.forbidden_diagnostic_words = {
             'es': ['tienes', 'sufres', 'padeces', 'diagnóstico', 'es probable que tengas'],
             'en': ['you have', 'you suffer from', 'you are diagnosed', 'diagnosis'],
             'fr': ['tu as', 'vous avez', 'tu souffres', 'diagnostic']
         }
         
-        # Certainty words that need to be replaced
+        
         self.overconfident_patterns = {
             'es': [
                 (r'\bestá relacionado con\b', 'podría estar relacionado con'),
                 (r'\bes causado por\b', 'puede ser causado por'),
                 (r'\bsufres de\b', 'podrías tener síntomas de'),
-                (r'\bsí,\s*', ''),  # Remove affirmative "sí,"
+                (r'\bsí,\s*', ''),  
                 (r'\bestás\s+\w+\s+de\b', 'podrías estar experimentando'),
             ],
             'en': [
                 (r'\bis caused by\b', 'may be caused by'),
                 (r'\byou have\b', 'you might be experiencing'),
-                (r'\byes,\s*', ''),  # Remove affirmative "yes,"
+                (r'\byes,\s*', ''),  
                 (r'\byou are suffering\b', 'you may be experiencing'),
             ],
             'fr': [
                 (r'\best causé par\b', 'peut être causé par'),
                 (r'\btu as\b', 'tu pourrais avoir'),
-                (r'\boui,\s*', ''),  # Remove affirmative "oui,"
+                (r'\boui,\s*', ''),  
                 (r'\bvous avez\b', 'vous pourriez avoir'),
             ]
         }
@@ -59,22 +59,22 @@ class ResponseNormalizer:
             Normalized, safer response
         """
         
-        # Step 1: Check for forbidden diagnostic language
+        
         if self._contains_diagnostic_language(response, language):
             return self._get_safe_referral(language, risk_level)
         
-        # Step 2: Reduce overconfidence
+       
         response = self._reduce_overconfidence(response, language)
         
-        # Step 3: Apply risk-specific normalization
+        
         if risk_level == RiskLevel.HIGH:
             response = self._normalize_high_risk(response, language)
         elif risk_level == RiskLevel.MEDIUM:
             response = self._normalize_medium_risk(response, language)
-        else:  # LOW
+        else:  
             response = self._normalize_low_risk(response, language)
         
-        # Step 4: Ensure proper structure
+        
         response = self._ensure_proper_structure(response, risk_level, language)
         
         return response
@@ -88,7 +88,7 @@ class ResponseNormalizer:
             if word in response_lower:
                 return True
         
-        # Check for affirmative diagnosis patterns
+        
         diagnostic_patterns = [
             r'^sí,\s+.*covid',
             r'^yes,\s+.*covid',
@@ -117,14 +117,14 @@ class ResponseNormalizer:
         HIGH RISK: Maximum caution, minimal detail, clear referral
         Should be very brief and redirect to professional
         """
-        # If response is too detailed for HIGH risk, truncate
+       
         sentences = response.split('.')
         
-        # Keep only first 2-3 sentences for HIGH risk
+        
         if len(sentences) > 3:
             response = '. '.join(sentences[:3]) + '.'
         
-        # Ensure referral language is present and strong
+        
         referral_phrases = {
             'es': 'Es fundamental consultar con un profesional sanitario para una evaluación adecuada.',
             'en': 'It is essential to consult with a healthcare professional for proper evaluation.',
@@ -140,20 +140,20 @@ class ResponseNormalizer:
         """
         MEDIUM RISK: Conditional language, acknowledge uncertainty
         """
-        # Add conditional framing if not present
+        
         conditional_intros = {
             'es': 'Sin poder determinar una causa específica, ',
             'en': 'Without being able to determine a specific cause, ',
             'fr': 'Sans pouvoir déterminer une cause spécifique, '
         }
         
-        # Check if response already has conditional language
+        
         has_conditional = any(phrase in response.lower() for phrase in 
                             ['podría', 'puede ser', 'posible', 'might', 'could', 'possible', 'peut-être'])
         
         if not has_conditional:
             intro = conditional_intros.get(language, conditional_intros['es'])
-            # Insert after first sentence
+            
             sentences = response.split('. ')
             if len(sentences) > 1:
                 sentences[0] = intro + sentences[0].lower()
@@ -165,27 +165,27 @@ class ResponseNormalizer:
         """
         LOW RISK: Can be more informative but still general
         """
-        # Ensure educational tone
+        
         educational_phrases = {
             'es': 'información general',
             'en': 'general information',
             'fr': 'information générale'
         }
         
-        # LOW risk can be less modified, but ensure it's framed as educational
+        
         return response
     
     def _ensure_proper_structure(self, response: str, risk_level: RiskLevel, language: str) -> str:
         """Ensure response has proper structure and length"""
         
-        # Remove multiple spaces
+        
         response = ' '.join(response.split())
         
-        # Ensure proper ending
+        
         if not response.endswith(('.', '!', '?')):
             response += '.'
         
-        # Add appropriate disclaimer based on risk level
+        
         response = self._add_disclaimer(response, risk_level, language)
         
         return response
@@ -193,7 +193,7 @@ class ResponseNormalizer:
     def _add_disclaimer(self, response: str, risk_level: RiskLevel, language: str) -> str:
         """Add appropriate medical disclaimer based on risk level"""
         
-        # Check if already has disclaimer
+        
         has_disclaimer = any(word in response.lower() for word in 
                            ['médico', 'doctor', 'professionnel', 'profesional'])
         
@@ -212,7 +212,7 @@ class ResponseNormalizer:
                 'fr': ' Si les symptômes persistent ou s\'aggravent, consultez un médecin.'
             },
             RiskLevel.LOW: {
-                'es': '',  # No mandatory disclaimer for LOW risk
+                'es': '',  
                 'en': '',
                 'fr': ''
             }
@@ -245,7 +245,7 @@ class ResponseNormalizer:
             'is_safe': True
         }
         
-        # Check if response is appropriate for risk level
+        
         if risk_level == RiskLevel.HIGH and metrics['sentence_count'] > 4:
             metrics['is_safe'] = False
             metrics['issue'] = 'HIGH risk response too detailed'
@@ -274,7 +274,7 @@ class ResponseNormalizer:
             return 'low'
 
 
-# Testing
+
 if __name__ == "__main__":
     normalizer = ResponseNormalizer()
     

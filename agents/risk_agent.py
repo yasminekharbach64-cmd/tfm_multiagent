@@ -34,8 +34,7 @@ class TriageRules:
     HIGH_RISK_RULES: List[Tuple[str, List[str]]] = [
 
         ("fever_high_child", [
-            # FIX v3.2: require 38.5+ for children, not just 38
-            # 37.x is subfebril and handled by LOW rules
+            
             r"(niño|bebé|hijo|kid|child|baby|enfant).{0,40}(fiebre|fever|fièvre).{0,20}(38\.5|39|40|alta|high)",
             r"(fiebre|fever|fièvre).{0,40}(niño|bebé|hijo|kid|child|baby|enfant).{0,20}(38\.5|39|40)",
             r"(hijo|niño|bebé).{0,20}(38\.5|39|40|41).{0,10}(grados|degrees|°)",
@@ -81,9 +80,7 @@ class TriageRules:
         ]),
 
         ("blood_symptoms_non_emergency", [
-            # FIX v3.2: Exclude toilet paper / wiping context (hemorrhoids)
-            # Blood in urine or dark stools still HIGH
-            # But "sangre en el papel" / "al limpiarme" → caught by context_override as LOW
+           
             r"(sangre|blood|sang)\s+en\s+(orina|urine|urina)",
             r"(heces|stool|selles).{0,20}(oscuras|negras|dark|black|noires)",
             r"(tosiendo|coughing|toussant).{0,20}(sangre|blood|sang)",
@@ -169,8 +166,7 @@ class TriageRules:
         ]),
 
         ("mental_health_moderate", [
-            # FIX v3.2: These are WEEKS-long or clearly persistent — MEDIUM is correct
-            # "un poco triste HOY" is caught by context_override before reaching here
+        
             r"(muy\s+triste|very\s+sad|très\s+triste).{0,30}(semanas?|weeks?|tiempo|time)",
             r"(deprimido|depressed|déprimé).{0,20}(semanas?|tiempo|weeks?)",
             r"(no\s+veo\s+sentido|don'?t\s+see\s+the\s+point|sans\s+but)",
@@ -198,8 +194,6 @@ class TriageRules:
         r"(me\s+pega|hits?\s+me|me\s+frappa|me\s+golpea)",
         r"(violencia|violence|abuse|maltrato)",
         r"(كنبغي\s*نموت|ما\s*بغيتش\s*نعيش|كنضرب\s*روحي)",
-        # FIX v3.2: Add mild sadness today as safety_sensitive but NOT medium
-        # Context: gentle empathy needed, but not clinical intervention
         r"(estoy|me\s+siento)\s+(un\s+poco|algo)\s+(triste|bajo|mal).{0,20}(hoy|today|aujourd'hui)",
         r"(i\s+feel|i'm)\s+(a\s+bit|kind\s+of)\s+(sad|down).{0,20}(today)",
     ]
@@ -215,7 +209,7 @@ class TriageRules:
             r"\b(ejercicio|exercise|exercice)\b.{0,30}\b(recomendado|recommended|recommandé)\b",
         ]),
 
-        # FIX v3.2: 37.x fever explicitly LOW
+        
         ("low_grade_fever", [
             r"(fiebre|fever|fièvre|temperatura|temperature).{0,20}(37[\.,]\d)",
             r"(37[\.,]\d).{0,20}(grados|degrees|°|fiebre|fever|temperatura)",
@@ -223,7 +217,7 @@ class TriageRules:
             r"(37[\.,]\d).{0,30}(hijo|niño|bebé|child|baby|kid|enfant)",
         ]),
 
-        # FIX v3.2: Blood on toilet paper → hemorrhoids context → LOW
+        
         ("toilet_paper_blood", [
             r"sangre\s+(en\s+el\s+papel|al\s+limpiar|en\s+el\s+papel\s+higiénico)",
             r"blood\s+(on\s+the\s+paper|when\s+i\s+wipe|on\s+toilet\s+paper)",
@@ -254,9 +248,6 @@ class TriageRules:
     ]
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# RISK ASSESSMENT AGENT
-# ─────────────────────────────────────────────────────────────────────────────
 
 class RiskAssessmentAgent:
     """Risk Assessment Agent v3.2 — Manchester Triage System"""
@@ -330,8 +321,7 @@ class RiskAssessmentAgent:
     def _assess_rules(self, question: str) -> Tuple[RiskLevel, str, str]:
         q = question.lower()
 
-        # LOW rules checked FIRST for known benign presentations
-        # This prevents false HIGH matches (e.g. "sangre en el papel")
+       
         for rule_name, patterns in self.rules.LOW_RISK_RULES:
             for pattern in patterns:
                 if re.search(pattern, q, re.IGNORECASE):
@@ -435,9 +425,9 @@ class RiskAssessmentAgent:
 if __name__ == "__main__":
     agent = RiskAssessmentAgent()
 
-    # v3.2 targeted regression tests for the 5 fixed cases
+    
     test_cases = [
-        # THE 5 FIXES
+        
         ("Tengo sangre en el papel",                         RiskLevel.LOW,    False, False),
         ("blood on toilet paper when I wipe",                RiskLevel.LOW,    False, False),
         ("Mi hijo tiene 37.5 de fiebre",                     RiskLevel.LOW,    False, False),
@@ -446,7 +436,6 @@ if __name__ == "__main__":
         ("I'm feeling a bit sad today",                      RiskLevel.LOW,    False, True),
         ("No veo sentido a nada",                            RiskLevel.MEDIUM, False, True),
         ("Quiero hacerme daño",                              RiskLevel.HIGH,   True,  True),
-        # Regression — must still work
         ("Mi hijo tiene 39 de fiebre",                       RiskLevel.HIGH,   True,  False),
         ("Sangre en la orina",                               RiskLevel.HIGH,   True,  False),
         ("Heces negras desde ayer",                          RiskLevel.HIGH,   True,  False),

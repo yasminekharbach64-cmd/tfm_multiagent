@@ -326,7 +326,7 @@
                 document.getElementById('languages-count').textContent = 
                     data.languages ? Object.keys(data.languages).length : 0;
 
-                // Language chart
+                
                 if (data.languages) {
                     renderLanguageChart(data.languages);
                 }
@@ -347,7 +347,7 @@
                     return;
                 }
 
-                // Show last 10 conversations
+                
                 const conversations = [];
                 for (let i = 0; i < data.history.length; i += 2) {
                     if (data.history[i].role === 'user' && data.history[i + 1]) {
@@ -451,10 +451,10 @@
             }
         }
 
-        // Load data on page load
+        
         window.onload = () => {
             refreshData();
-            // Auto-refresh every 30 seconds
+            
             setInterval(refreshData, 30000);
         };
     </script>

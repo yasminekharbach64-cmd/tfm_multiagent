@@ -24,9 +24,7 @@ import time
 import re
 import random
 
-# ─────────────────────────────────────────────
-# SINGLETON
-# ─────────────────────────────────────────────
+
 _agent_instance = None
 
 def get_agent():
@@ -58,10 +56,7 @@ class IntegratedHealthAgent:
         self._setup_varied_phrases()
         self._setup_templates()
 
-    # ─────────────────────────────────────────
-    # SETUP
-    # ─────────────────────────────────────────
-
+   
     def _setup_varied_phrases(self):
         self.closings = {
             'es': ["Cuídate.", "Espero que mejores pronto."],
@@ -213,7 +208,7 @@ class IntegratedHealthAgent:
             )
         )
 
-        # ── CLARIFICATION ─────────────────────────────────────────────────────
+        
         self.clarification_template = PromptTemplate(
             input_variables=["question", "lang_name"],
             template=(
@@ -232,9 +227,7 @@ class IntegratedHealthAgent:
             )
         )
 
-    # ─────────────────────────────────────────
-    # LANGUAGE DETECTION
-    # ─────────────────────────────────────────
+    
 
     def detect_language(self, text: str) -> dict:
         text_lower = text.lower()
@@ -270,7 +263,8 @@ class IntegratedHealthAgent:
             lang_scores["en"] += 3
         if re.search(r"\b(j'ai|depuis|je me|je suis)\b", text_lower):
             lang_scores["fr"] += 3
-
+        if re.search(r'\b(quels?|sont|principaux|diabète|type)\b', text_lower):
+            lang_scores["fr"] += 5
         detected_lang = max(lang_scores, key=lang_scores.get)
         if all(s == 0 for s in lang_scores.values()):
             detected_lang = "es"
@@ -278,9 +272,7 @@ class IntegratedHealthAgent:
         lang_names = {"es": "español", "en": "English", "fr": "français"}
         return {"name": lang_names[detected_lang], "code": detected_lang, "is_greeting": False}
 
-    # ─────────────────────────────────────────
-    # GREETING
-    # ─────────────────────────────────────────
+    
 
     def get_greeting_response(self, lang_code: str) -> str:
         greetings = {
@@ -291,9 +283,7 @@ class IntegratedHealthAgent:
         }
         return greetings.get(lang_code, greetings["es"])
 
-    # ─────────────────────────────────────────
-    # VAGUE SYMPTOM
-    # ─────────────────────────────────────────
+    
 
     def _is_vague_symptom(self, question: str, lang_code: str) -> bool:
         if len(question.split()) > 8:
@@ -301,10 +291,7 @@ class IntegratedHealthAgent:
         q = question.lower()
         return any(re.search(p, q) for p in self.vague_symptoms.get(lang_code, []))
 
-    # ─────────────────────────────────────────
-    # CONTEXT OVERRIDES (v3.2)
-    # ─────────────────────────────────────────
-
+    
     def _context_override(self, question: str, lang_code: str):
         q = question.lower()
 
@@ -339,9 +326,7 @@ class IntegratedHealthAgent:
 
         return None
 
-    # ─────────────────────────────────────────
-    # ✅ NEW v3.3: MEMORY HELPERS
-    # ─────────────────────────────────────────
+    
 
     def _is_follow_up(self, question: str) -> bool:
         """Detect if question is a follow-up to previous context"""
@@ -354,11 +339,15 @@ class IntegratedHealthAgent:
             r'(me\s+dijiste|you\s+said|vous\s+avez\s+dit)',
             r'(sobre\s+eso|about\s+that|à\s+ce\s+sujet)',
             r'(antes\s+mencionaste|you\s+mentioned|vous\s+avez\s+mentionné)',
+            r'\b(esto|eso|aquello|this|that|it|cela|ça)\b',
+            r'\b(afecta|afectaría|affects|affect)\b',
+            r'\b(en\s+ese\s+caso|en\s+mi\s+caso|in\s+my\s+case)\b',
+            r'(cómo\s+afecta|how\s+does\s+it|comment\s+cela)',
         ]
         q = question.lower().strip()
         if any(re.search(p, q, re.IGNORECASE) for p in follow_up_patterns):
             return True
-        # Short questions with ? are likely follow-ups
+        
         if len(question.split()) <= 5 and "?" in question:
             return True
         return False
@@ -378,8 +367,7 @@ class IntegratedHealthAgent:
 
         q = question.lower()
 
-        # ── RULE 1: Third-party questions → skip profile injection completely ──
-        # "mi bebé", "mi hijo", "mi madre", etc. are about someone else
+        
         third_party_patterns = [
             r'\b(mi\s+beb[eé]|mi\s+hij[oa]|mi\s+madr[e]|mi\s+padr[e]|mi\s+abuel[oa])\b',
             r'\b(my\s+baby|my\s+child|my\s+son|my\s+daughter|my\s+mother|my\s+father)\b',
@@ -388,7 +376,7 @@ class IntegratedHealthAgent:
         if any(re.search(p, q) for p in third_party_patterns):
             return question
 
-        # ── RULE 2: Emergency questions → skip profile injection ──────────────
+        
         emergency_keywords = [
             r'\b(emergencia|urgencia|emergency|urgence)\b',
             r'\b(ataque|infarto|stroke|convulsi[oó]n)\b',
@@ -399,7 +387,7 @@ class IntegratedHealthAgent:
 
         profile = self.memory.extract_user_profile(session_id)
 
-        # ── RULE 3: Follow-up question → inject recent context + profile ──────
+        
         if self._is_follow_up(question):
             context = self.memory.get_context_for_prompt(session_id, max_messages=4)
             if context:
@@ -411,7 +399,7 @@ class IntegratedHealthAgent:
                 )
             return question
 
-        # ── RULE 4: Medication/allergy question → inject conditions if relevant
+        
         medication_question = any(re.search(p, q) for p in [
             r'\b(medicamento|f[aá]rmaco|pastilla|medicine|drug|médicament)\b',
             r'\b(alergi[ao]|allergic?|allergie)\b',
@@ -427,7 +415,7 @@ class IntegratedHealthAgent:
                 f"{question}"
             )
 
-        # ── RULE 5: Personal health question → inject name + age only ─────────
+       
         personal_question = any(re.search(p, q) for p in [
             r'\b(s[íi]ntoma|symptom|symptôme)\b',
             r'\b(me\s+duele|me\s+siento|i\s+feel|j[e\']?\s+me\s+sens)\b',
@@ -445,14 +433,12 @@ class IntegratedHealthAgent:
 
         return question
 
-    # ─────────────────────────────────────────
-    # MAIN ANSWER — v3.3 with memory
-    # ─────────────────────────────────────────
+    
 
     def answer(self, question: str, session_id: str = "default") -> str:
         start_time = time.time()
 
-        # STEP 0: EMERGENCY
+        
         is_emergency, emergency_category = EmergencyHandler.is_emergency(question)
         if is_emergency:
             emergency_response = EmergencyHandler.get_emergency_response(emergency_category, question)
@@ -467,7 +453,7 @@ class IntegratedHealthAgent:
             )
             return emergency_response
 
-        # STEP 1: Language & Greeting
+        
         lang_info = self.detect_language(question)
         if lang_info.get("is_greeting"):
             response = self.get_greeting_response(lang_info["code"])
@@ -477,7 +463,7 @@ class IntegratedHealthAgent:
                                   category="greeting", response_time=time.time() - start_time)
             return response
 
-        # STEP 1b: ✅ NEW — Profile/history question → answer from REAL memory
+        
         if self.memory.is_profile_question(question):
             response = self.memory.build_profile_response(session_id, lang_info["code"])
             self.memory.add_message(session_id, "user", question)
@@ -486,7 +472,7 @@ class IntegratedHealthAgent:
                                   category="profile_question", response_time=time.time() - start_time)
             return response
 
-        # STEP 2: Vague → clarification
+        
         if self._is_vague_symptom(question, lang_info["code"]):
             response = self._ask_clarification(question, lang_info)
             self.memory.add_message(session_id, "user", question)
@@ -495,7 +481,7 @@ class IntegratedHealthAgent:
                                   category="clarification", response_time=time.time() - start_time)
             return response
 
-        # STEP 3: Pre-safety check
+       
         safety_override = self._pre_safety_check(question, lang_info["code"])
         if safety_override:
             response = self._final_cleanup(safety_override, is_emergency_response=False)
@@ -505,7 +491,7 @@ class IntegratedHealthAgent:
                                   category="safety_override", response_time=time.time() - start_time)
             return response
 
-        # STEP 4: Context override
+        
         context_result = self._context_override(question, lang_info["code"])
         if context_result:
             risk_level, is_safety_sensitive = context_result
@@ -514,38 +500,40 @@ class IntegratedHealthAgent:
             risk_level = risk_assessment["risk_level"]
             is_safety_sensitive = risk_assessment.get("is_safety_sensitive", False)
 
-        # STEP 5: RAG Context
-        rag_data = self.rag_agent.search(question, lang_info["code"], top_k=2)
+        
+        rag_data = self.rag_agent.search(question, lang_info["code"], top_k=3)
         context = (
-            "\n".join([f"- {r['answer']}" for r in rag_data['results']])
+           self.rag_agent.format_context(rag_data['results'])
             if rag_data['results'] else "General wellness and triage information."
         )
 
-        # STEP 5b: ✅ NEW — Enrich question with real memory context
+        
         enriched_question = self._enrich_with_memory(question, session_id)
 
-        # STEP 6: Generate response
+        
         response = self._generate_response(
             question=enriched_question, risk_level=risk_level,
             is_safety_sensitive=is_safety_sensitive,
             context=context, lang_info=lang_info
         )
 
-        # STEP 7: Post-filter
+        
         response = self._post_safety_filter(response, lang_info["code"])
 
-        # STEP 8: Closing
+        
         if not is_safety_sensitive:
             response = self._add_closing(response, risk_level, lang_info["code"])
 
-        # STEP 9: Final cleanup
+        
         response = self._final_cleanup(response, is_emergency_response=False)
+        if rag_data['results'] and rag_data.get('citations'):
+         response += "\n\n" + rag_data['citations']
 
-        # STEP 10: ✅ NEW — Save to memory
+        
         self.memory.add_message(session_id, "user", question)
         self.memory.add_message(session_id, "assistant", response)
 
-        # STEP 11: Log
+        
         self._log_interaction(
             question=question, answer=response, lang_info=lang_info,
             category=risk_level.value, response_time=time.time() - start_time,
@@ -554,10 +542,7 @@ class IntegratedHealthAgent:
         )
         return response
 
-    # ─────────────────────────────────────────
-    # GENERATE
-    # ─────────────────────────────────────────
-
+    
     def _ask_clarification(self, question: str, lang_info: dict) -> str:
         chain = self.clarification_template | self.llm
         r = chain.invoke({"question": question, "lang_name": lang_info["name"]})
@@ -582,14 +567,11 @@ class IntegratedHealthAgent:
 
         return r.content if hasattr(r, 'content') else str(r)
 
-    # ─────────────────────────────────────────
-    # PRE-SAFETY CHECK (v3.2)
-    # ─────────────────────────────────────────
-
+    
     def _pre_safety_check(self, question: str, lang_code: str):
         q = question.lower()
 
-        # ── LETHAL DOSE / SUICIDE METHOD — highest priority, treat as crisis ──
+        
         if any(re.search(p, q) for p in [
             r'(pastillas?|pills?|medicamento|paracetamol|ibuprofeno?).{0,30}(morir|matar|suicid|die|kill|death|muerte)',
             r'(morir|matar|suicid|die|kill|death|muerte).{0,30}(pastillas?|pills?|medicamento|paracetamol|ibuprofeno?)',
@@ -620,7 +602,7 @@ class IntegratedHealthAgent:
                 )
             }.get(lang_code, "💙 Please contact emergency services or a crisis support line now. You are not alone.")
 
-        # ── NORMAL DOSAGE QUESTION (not lethal intent) ────────────────────────
+        
         if any(re.search(p, q) for p in [
             r'\d+\s*(?:ibuprofeno?|paracetamol|aspirin\w*|pastillas?|pills?)',
             r'(?:puedo|can\s+i|puis-je).{0,20}(?:tomar|take|prendre).{0,20}\d+',
@@ -674,9 +656,7 @@ class IntegratedHealthAgent:
 
         return None
 
-    # ─────────────────────────────────────────
-    # POST-SAFETY FILTER
-    # ─────────────────────────────────────────
+    
 
     def _post_safety_filter(self, response: str, lang_code: str) -> str:
         for pattern, replacement in [
@@ -695,9 +675,7 @@ class IntegratedHealthAgent:
 
         return response
 
-    # ─────────────────────────────────────────
-    # CLOSING
-    # ─────────────────────────────────────────
+    
 
     def _add_closing(self, response: str, risk_level: RiskLevel, lang_code: str) -> str:
         if risk_level in (RiskLevel.LOW, RiskLevel.MEDIUM):
@@ -706,9 +684,7 @@ class IntegratedHealthAgent:
                 response += f" {closing}"
         return response
 
-    # ─────────────────────────────────────────
-    # FINAL CLEANUP (v3.2)
-    # ─────────────────────────────────────────
+    
 
     def _final_cleanup(self, response: str, is_emergency_response: bool = False) -> str:
         for pat in [
@@ -742,9 +718,7 @@ class IntegratedHealthAgent:
 
         return response
 
-    # ─────────────────────────────────────────
-    # LOGGING
-    # ─────────────────────────────────────────
+   
 
     def _log_interaction(self, question: str, answer: str, lang_info: dict,
                          category: str, response_time: float,
@@ -771,9 +745,7 @@ class IntegratedHealthAgent:
         )
 
 
-# ─────────────────────────────────────────────
-# ENTRY POINT
-# ─────────────────────────────────────────────
+
 
 def health_answer(question: str, session_id: str = "default") -> str:
     return get_agent().answer(question, session_id=session_id)

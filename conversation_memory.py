@@ -15,7 +15,7 @@ from datetime import datetime
 from typing import List, Dict, Optional
 from pathlib import Path
 
-# Patrones de terceros — mensajes sobre OTRAS personas, no el usuario
+
 THIRD_PARTY_PATTERNS = [
     r'\b(mi\s+beb[eé]|mi\s+hij[oa]|mi\s+madr[e]|mi\s+padr[e]|mi\s+abuel[oa]|mi\s+hermano|mi\s+hermana)\b',
     r'\b(my\s+baby|my\s+child|my\s+son|my\s+daughter|my\s+mother|my\s+father|my\s+brother|my\s+sister)\b',
@@ -76,9 +76,7 @@ class ConversationMemory:
         if conv_file.exists():
             conv_file.unlink()
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # PROFILE EXTRACTION
-    # ─────────────────────────────────────────────────────────────────────────
+    
 
     def extract_user_profile(self, session_id: str) -> Dict:
         """
@@ -159,9 +157,7 @@ class ConversationMemory:
 
         return profile
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # CONTEXT FOR PROMPT
-    # ─────────────────────────────────────────────────────────────────────────
+    
 
     def get_context_for_prompt(self, session_id: str, max_messages: int = 4) -> str:
         """
@@ -192,7 +188,7 @@ class ConversationMemory:
             for msg in history[:-1]:
                 if count >= max_messages:
                     break
-                # ✅ FIX: Skip third-party messages
+                
                 if _is_third_party_message(msg["content"]):
                     continue
                 role = "Usuario" if msg["role"] == "user" else "Asistente"
@@ -204,10 +200,7 @@ class ConversationMemory:
 
         return "\n\n".join(parts)
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # PROFILE QUESTION DETECTION
-    # ─────────────────────────────────────────────────────────────────────────
-
+    
     def is_profile_question(self, question: str) -> bool:
         patterns = [
             r'(resúmeme|resume|summarize).{0,20}(perfil|historial|conversaci[oó]n|hablado)',
@@ -278,9 +271,7 @@ class ConversationMemory:
 
         return "\n".join(parts)
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # STORAGE HELPERS
-    # ─────────────────────────────────────────────────────────────────────────
+    
 
     def _save_conversation(self, session_id: str):
         conv_file = self.storage_dir / f"{session_id}.json"

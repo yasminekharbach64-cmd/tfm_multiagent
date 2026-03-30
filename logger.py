@@ -18,12 +18,12 @@ class HealthChatLogger:
         self.log_dir = Path(log_dir)
         self.log_dir.mkdir(exist_ok=True)
         
-        # Create separate log files
+        
         self.interactions_file = self.log_dir / "interactions.jsonl"
         self.errors_file = self.log_dir / "errors.log"
         self.metrics_file = self.log_dir / "metrics.jsonl"
         
-        # Setup standard logger for errors
+        
         self._setup_error_logger()
     
     def _setup_error_logger(self):
@@ -80,7 +80,7 @@ class HealthChatLogger:
             "context": context or {}
         }
         
-        # Log to error file
+       
         self.error_logger.error(json.dumps(error_data, ensure_ascii=False))
     
     def log_metrics(
@@ -133,7 +133,7 @@ class HealthChatLogger:
         }
 
 
-# Decorator for automatic logging
+
 def log_agent_call(logger: HealthChatLogger, agent_name: str):
     """Decorator to automatically log agent calls"""
     def decorator(func):
@@ -159,12 +159,12 @@ def log_agent_call(logger: HealthChatLogger, agent_name: str):
     return decorator
 
 
-# Example usage
+
 if __name__ == "__main__":
-    # Initialize logger
+    
     logger = HealthChatLogger()
     
-    # Log a sample interaction
+    
     logger.log_interaction(
         question="¿Cuándo es peligrosa una fiebre?",
         answer="Una fiebre es peligrosa cuando supera 40°C...",
@@ -174,13 +174,13 @@ if __name__ == "__main__":
         metadata={"model": "mistral", "agent": "health_agent"}
     )
     
-    # Log an error
+    
     logger.log_error(
         error_type="LLM_timeout",
         error_message="Model took too long to respond",
         question="What causes diabetes?"
     )
     
-    # Get stats
+    
     stats = logger.get_stats()
     print(json.dumps(stats, indent=2, ensure_ascii=False))

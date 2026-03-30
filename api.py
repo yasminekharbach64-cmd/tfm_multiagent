@@ -8,7 +8,7 @@ import traceback
 app = Flask(__name__)
 app.json.ensure_ascii = False
 
-# Initialize logger and memory
+
 logger = HealthChatLogger()
 memory = ConversationMemory()
 
@@ -26,19 +26,19 @@ def ask():
         question = data.get("question", "")
         session_id = data.get("session_id", "default_user")
         
-        # Save user question to memory
+        
         memory.add_message(session_id, "user", question)
         
-        # Get answer
+        
         answer = route_question(question)
         
-        # Save assistant answer to memory
+        
         memory.add_message(session_id, "assistant", answer)
         
-        # Calculate response time
+        
         response_time = time.time() - start_time
         
-        # Log the interaction
+        
         logger.log_interaction(
             question=question,
             answer=answer,
@@ -66,12 +66,12 @@ def ask():
         )
         return jsonify({"error": "حدث خطأ"}), 500
 
-# Route to view statistics
+
 @app.route("/stats")
 def stats():
     return jsonify(logger.get_stats())
 
-# Route to view conversation history
+
 @app.route("/conversation/<session_id>", methods=["GET"])
 def get_conversation(session_id):
     """Get conversation history for a session"""
@@ -88,7 +88,7 @@ def get_conversation(session_id):
 def dashboard():
     return render_template("dashboard.html")
 
-# Route to clear conversation
+
 @app.route("/conversation/<session_id>", methods=["DELETE"])
 def clear_conversation(session_id):
     """Clear conversation history"""

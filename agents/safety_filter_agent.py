@@ -1,7 +1,6 @@
 # agents/safety_filter_agent.py
 """
 Safety Filter Agent v3.0
-يفلتر كل المحتوى الطبي الخطير
 
 IMPROVEMENTS v3.0:
 ✅ FIXED: Arabic support added to ALL responses
@@ -36,7 +35,7 @@ class SafetyFilterAgent:
 
     def __init__(self):
 
-        # ── MEDICATION BLOCKED ────────────────────────────────────────────────
+        
         self.medication_response = {
             'es': "El tratamiento adecuado depende de la causa y de tu situación personal. Por seguridad, consulta con un profesional de salud o farmacéutico antes de tomar cualquier medicamento. 💙",
             'en': "Appropriate treatment depends on the cause and your personal situation. For safety, please consult a healthcare professional or pharmacist before taking any medication. 💙",
@@ -44,7 +43,7 @@ class SafetyFilterAgent:
             'ar': "العلاج المناسب يعتمد على السبب ووضعك الشخصي. للسلامة، استشر أخصائي صحي أو صيدلاني قبل تناول أي دواء. 💙"
         }
 
-        # ── EXERCISE PAIN ─────────────────────────────────────────────────────
+        
         self.exercise_pain_response = {
             'es': "El dolor durante o después del ejercicio puede deberse a sobrecarga muscular, técnica inadecuada o una lesión. Reducir la intensidad y descansar puede ayudar. Si el dolor persiste, es intenso o aparece en el pecho, consulta con un profesional de salud.",
             'en': "Pain during or after exercise may be due to muscle overload, improper technique, or an injury. Reducing intensity and resting may help. If pain persists, is intense, or appears in the chest, consult a healthcare professional.",
@@ -52,7 +51,7 @@ class SafetyFilterAgent:
             'ar': "الألم أثناء أو بعد التمرين قد يكون بسبب إجهاد عضلي أو تقنية غير صحيحة أو إصابة. تقليل الشدة والراحة قد يساعد. إذا استمر الألم أو كان شديداً، استشر أخصائي صحي."
         }
 
-        # ── PERSISTENT SYMPTOMS ───────────────────────────────────────────────
+        
         self.persistent_symptoms_response = {
             'es': "Cuando los síntomas persisten más de lo esperado, lo más recomendable es consultar con un profesional de salud para una evaluación adecuada y descartar causas que requieran tratamiento.",
             'en': "When symptoms persist longer than expected, the most advisable course is to consult with a healthcare professional for proper evaluation and to rule out causes requiring treatment.",
@@ -60,7 +59,7 @@ class SafetyFilterAgent:
             'ar': "عندما تستمر الأعراض أكثر من المتوقع، يُنصح باستشارة أخصائي صحي للتقييم المناسب واستبعاد الأسباب التي تحتاج علاجاً."
         }
 
-        # ── MENTAL HEALTH / DISTRESS ──────────────────────────────────────────
+        
         self.mental_health_response = {
             'es': "💙 Parece que estás pasando por un momento difícil. Es completamente válido buscar apoyo. Hablar con un profesional de salud mental puede ayudarte mucho. Si en algún momento sientes que no puedes más, no dudes en llamar a los servicios de emergencia o a una línea de apoyo emocional.",
             'en': "💙 It sounds like you're going through a difficult time. It's completely valid to seek support. Talking to a mental health professional can help a lot. If at any point you feel overwhelmed, don't hesitate to contact emergency services or an emotional support line.",
@@ -68,7 +67,7 @@ class SafetyFilterAgent:
             'ar': "💙 يبدو أنك تمر بوقت صعب. من الطبيعي تماماً أن تبحث عن دعم. التحدث مع أخصائي صحة نفسية يمكن أن يساعد كثيراً. إذا شعرت في أي وقت أنك لا تستطيع التحمل، لا تتردد في الاتصال بخدمات الطوارئ أو خط دعم عاطفي."
         }
 
-        # ── SELF-HARM CRISIS ──────────────────────────────────────────────────
+        
         self.crisis_response = {
             'es': "💙 Lo que describes me preocupa y quiero que sepas que no estás solo/a. Por favor, contacta ahora con los servicios de emergencia o con una línea de apoyo en crisis. Mereces ayuda y apoyo.",
             'en': "💙 What you describe concerns me and I want you to know you are not alone. Please contact emergency services or a crisis support line now. You deserve help and support.",
@@ -76,9 +75,7 @@ class SafetyFilterAgent:
             'ar': "💙 ما تصفه يقلقني وأريدك أن تعلم أنك لست وحدك. يرجى التواصل الآن مع خدمات الطوارئ أو خط دعم الأزمات. أنت تستحق المساعدة والدعم."
         }
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # MAIN FILTER
-    # ─────────────────────────────────────────────────────────────────────────
+    
 
     def filter_response(self, response: str, question: str, risk_level: Any, lang_code: str) -> Dict[str, Any]:
         """
@@ -99,37 +96,35 @@ class SafetyFilterAgent:
         q = question.lower()
         r = response.lower()
 
-        # ── 1. SELF-HARM / CRISIS (absolute priority) ─────────────────────────
+       
         if self._is_crisis(q):
             return self._result(
                 self.crisis_response.get(lang_code, self.crisis_response['es']),
                 True, ["crisis_selfharm_detected"]
             )
 
-        # ── 2. MENTAL HEALTH DISTRESS ─────────────────────────────────────────
+        
         if self._is_mental_health_distress(q):
             return self._result(
                 self.mental_health_response.get(lang_code, self.mental_health_response['es']),
                 True, ["mental_health_distress_detected"]
             )
 
-        # ── 3. SPECIFIC MEDICATION DOSAGE REQUEST ────────────────────────────
-        # Only block if asking HOW MUCH to take or asking for a recommendation
-        # NOT if asking what something is (educational)
+        
         if self._is_medication_dosage_request(q):
             return self._result(
                 self.medication_response.get(lang_code, self.medication_response['es']),
                 True, ["medication_dosage_request_blocked"]
             )
 
-        # ── 4. EXERCISE PAIN ──────────────────────────────────────────────────
+        
         if self._is_exercise_pain_question(q):
             return self._result(
                 self.exercise_pain_response.get(lang_code, self.exercise_pain_response['es']),
                 True, ["exercise_pain_handled"]
             )
 
-        # ── 5. LLM RESPONSE CONTAINS SPECIFIC MEDICATIONS ────────────────────
+        
         if self._response_contains_medication_advice(response):
             if self._is_persistent_symptom_question(q):
                 return self._result(
@@ -141,40 +136,38 @@ class SafetyFilterAgent:
                 True, ["medication_advice_in_response_blocked"]
             )
 
-        # ── 6. GENERAL CLEANUP ────────────────────────────────────────────────
+        
         cleaned = response
         reasons = []
 
-        # Remove numbered lists
+        
         if self._has_numbered_list(cleaned):
             cleaned = self._remove_numbered_lists(cleaned)
             reasons.append("numbered_list_removed")
 
-        # Remove bullet points
+        
         if self._has_bullet_list(cleaned):
             cleaned = self._remove_bullet_lists(cleaned)
             reasons.append("bullet_list_removed")
 
-        # Soften diagnosis language
+        
         cleaned, softened = self._soften_diagnosis_language(cleaned)
         if softened:
             reasons.append("diagnosis_language_softened")
 
-        # Remove exercise technique advice from response
+        
         if self._contains_exercise_techniques(cleaned):
             return self._result(
                 self.exercise_pain_response.get(lang_code, self.exercise_pain_response['es']),
                 True, ["exercise_techniques_in_response_removed"]
             )
 
-        # Final spacing cleanup
+        
         cleaned = re.sub(r'\s{2,}', ' ', cleaned).strip()
 
         return self._result(cleaned, bool(reasons), reasons)
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # DETECTION METHODS
-    # ─────────────────────────────────────────────────────────────────────────
+   
 
     def _is_crisis(self, q: str) -> bool:
         """Detects self-harm or suicidal ideation"""
@@ -206,7 +199,7 @@ class SafetyFilterAgent:
         Only blocks when asking HOW MUCH or WHICH medication to take.
         Does NOT block educational questions like 'what is ibuprofen'.
         """
-        # Educational patterns — allow these through
+        
         educational_patterns = [
             r'(what\s+is|qué\s+es|qu\'?est.ce\s+que|what\s+does)\s+\w+\s+(do|mean)',
             r'(explain|explica|explique)\s+(me\s+)?(what|qué|que)',
@@ -215,7 +208,7 @@ class SafetyFilterAgent:
         if any(re.search(p, q, re.IGNORECASE) for p in educational_patterns):
             return False
 
-        # Block patterns — dosage/recommendation requests
+        
         block_patterns = [
             r'(can\s+i|puedo|puis-je)\s+(take|tomar|prendre)\s+\d+',
             r'\d+\s*(ibuprofeno?|paracetamol|aspirin|pastillas?|pills?|comprimés?)',
@@ -279,10 +272,7 @@ class SafetyFilterAgent:
         r_lower = response.lower()
         return any(term in r_lower for term in technical_terms)
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # CLEANUP METHODS
-    # ─────────────────────────────────────────────────────────────────────────
-
+    
     def _has_numbered_list(self, text: str) -> bool:
         return bool(re.search(r'^\s*\d+[.)]\s', text, re.MULTILINE))
 
@@ -332,9 +322,7 @@ class SafetyFilterAgent:
                 modified = True
         return text, modified
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # HELPER
-    # ─────────────────────────────────────────────────────────────────────────
+    
 
     def _result(self, response: str, was_filtered: bool, reasons: list) -> Dict[str, Any]:
         return {

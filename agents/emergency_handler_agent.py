@@ -19,12 +19,10 @@ from typing import Tuple, Optional
 class EmergencyHandler:
     """Smart Emergency Detection & Response System v3.0"""
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # EMERGENCY KEYWORDS — regex-based for better matching
-    # ─────────────────────────────────────────────────────────────────────────
+    
     EMERGENCY_PATTERNS = {
 
-        # ── BREATHING ────────────────────────────────────────────────────────
+        
         'breathing': {
             'patterns': [
                 r"can'?t\s+breath",
@@ -49,7 +47,7 @@ class EmergencyHandler:
             ]
         },
 
-        # ── CHEST PAIN ────────────────────────────────────────────────────────
+        
         'chest_pain': {
             'patterns': [
                 r"chest\s+pain",
@@ -72,7 +70,7 @@ class EmergencyHandler:
             ]
         },
 
-        # ── STROKE ───────────────────────────────────────────────────────────
+        
         'stroke': {
             'patterns': [
                 r"face\s+drooping",
@@ -100,7 +98,7 @@ class EmergencyHandler:
             ]
         },
 
-        # ── THUNDERCLAP HEADACHE (brain hemorrhage red flag) ─────────────────
+        
         'thunderclap_headache': {
             'patterns': [
                 r"(worst|thunder|worst ever|never felt).{0,20}headache",
@@ -115,7 +113,7 @@ class EmergencyHandler:
             ]
         },
 
-        # ── UNCONSCIOUS / FAINTING ────────────────────────────────────────────
+        
         'unconscious': {
             'patterns': [
                 r"(fainted|passed\s+out|blacked\s+out|collapsed|unconscious)",
@@ -131,7 +129,7 @@ class EmergencyHandler:
             ]
         },
 
-        # ── SEVERE BLEEDING ───────────────────────────────────────────────────
+        
         'bleeding': {
             'patterns': [
                 r"bleeding\s+(won'?t\s+stop|heavily|profusely|severely|uncontrolled)",
@@ -149,7 +147,7 @@ class EmergencyHandler:
             ]
         },
 
-        # ── BLOOD IN VOMIT / STOOL ────────────────────────────────────────────
+        
         'blood_vomit': {
             'patterns': [
                 r"(vomiting|coughing)\s+blood",
@@ -165,7 +163,7 @@ class EmergencyHandler:
             ]
         },
 
-        # ── HIGH FEVER ────────────────────────────────────────────────────────
+        
         'high_fever': {
             'patterns': [
                 r"fever\s+(of\s+)?(40|41|42|104|105|106)",
@@ -183,7 +181,7 @@ class EmergencyHandler:
             ]
         },
 
-        # ── SEVERE PAIN ───────────────────────────────────────────────────────
+        
         'severe_pain': {
             'patterns': [
                 r"(unbearable|excruciating|worst|extreme)\s+pain",
@@ -197,7 +195,7 @@ class EmergencyHandler:
             ]
         },
 
-        # ── CHOKING CHILD (NEW v3.0) ──────────────────────────────────────────
+        
         'choking': {
             'patterns': [
                 r"(child|baby|kid|infant|toddler).{0,30}(choking|can'?t\s+breath|swallowed|airway)",
@@ -210,7 +208,7 @@ class EmergencyHandler:
             ]
         },
 
-        # ── ANAPHYLAXIS (NEW v3.0) ────────────────────────────────────────────
+        
         'anaphylaxis': {
             'patterns': [
                 r"anaphyla",
@@ -229,7 +227,7 @@ class EmergencyHandler:
             ]
         },
 
-        # ── SEIZURES (NEW v3.0) ───────────────────────────────────────────────
+        
         'seizure': {
             'patterns': [
                 r"(having|having\s+a|experiencing)\s+(seizure|convulsion|fit)",
@@ -245,7 +243,7 @@ class EmergencyHandler:
             ]
         },
 
-        # ── OVERDOSE / POISONING (NEW v3.0) ──────────────────────────────────
+        
         'overdose': {
             'patterns': [
                 r"(overdose|took\s+too\s+many\s+(pills|tablets|medications))",
@@ -261,11 +259,7 @@ class EmergencyHandler:
         },
     }
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # SEVERITY LEVELS
-    # ─────────────────────────────────────────────────────────────────────────
-    # CRITICAL = call emergency number NOW, do not wait
-    # URGENT   = go to ER today, do not delay
+    
     SEVERITY = {
         'breathing':           'CRITICAL',
         'chest_pain':          'CRITICAL',
@@ -282,9 +276,7 @@ class EmergencyHandler:
         'severe_pain':         'URGENT',
     }
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # EMERGENCY RESPONSES
-    # ─────────────────────────────────────────────────────────────────────────
+    
     EMERGENCY_RESPONSES = {
 
         'breathing': {
@@ -1021,19 +1013,17 @@ Une douleur extrême peut indiquer une appendicite, pancréatite, ulcère perfor
         },
     }
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # LANGUAGE DETECTION v3.0 — improved, no false positives
-    # ─────────────────────────────────────────────────────────────────────────
+    
     @staticmethod
     def detect_language(text: str) -> str:
-        # Arabic: character-based (most reliable)
+        
         if len(re.findall(r'[\u0600-\u06FF]', text)) > 2:
             return 'ar'
 
         text_lower = text.lower()
         scores = {'es': 0, 'en': 0, 'fr': 0}
 
-        # Strong unique markers per language
+        
         es_markers = [r'\b(tengo|estoy|dolor|fiebre|sangre|desde\s+hace|me\s+duele|no\s+puedo|llevo)\b']
         en_markers = [r"\b(i\s+have|i'm|i\s+can't|i\s+feel|my\s+\w+|breathing|hurts|pain\s+in)\b"]
         fr_markers = [r"\b(j'ai|je\s+ne|depuis|je\s+me|douleur|fièvre|je\s+suis|ne\s+peux\s+pas)\b"]
@@ -1048,9 +1038,7 @@ Une douleur extrême peut indiquer une appendicite, pancréatite, ulcère perfor
         best = max(scores, key=scores.get)
         return best if scores[best] > 0 else 'es'
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # EMERGENCY DETECTION — regex-based
-    # ─────────────────────────────────────────────────────────────────────────
+    
     @classmethod
     def is_emergency(cls, question: str) -> Tuple[bool, Optional[str]]:
         question_lower = question.lower()
@@ -1059,12 +1047,19 @@ Une douleur extrême peut indiquer une appendicite, pancréatite, ulcère perfor
             for pattern in data['patterns']:
                 if re.search(pattern, question_lower, re.IGNORECASE):
                     return True, category
+                heart_attack_combinations = [
+            (r'(dolor|pecho|chest|poitrine)', r'(brazo|arm|bras)'),
+            (r'(dolor|pecho|chest)', r'(sudo?\s*frío|cold\s*sweat|sueur\s*froide)'),
+            (r'(pecho|chest)', r'(dormido|entumecido|numb|engourdi)'),
+        ]
+        for pat1, pat2 in heart_attack_combinations:
+            if re.search(pat1, question_lower) and re.search(pat2, question_lower):
+                return True, 'chest_pain'
+
 
         return False, None
 
-    # ─────────────────────────────────────────────────────────────────────────
-    # GET RESPONSE
-    # ─────────────────────────────────────────────────────────────────────────
+    
     @classmethod
     def get_emergency_response(cls, category: str, question: str) -> str:
         lang = cls.detect_language(question)
@@ -1090,9 +1085,7 @@ Une douleur extrême peut indiquer une appendicite, pancréatite, ulcère perfor
         return cls.SEVERITY.get(category, 'CRITICAL')
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# TEST
-# ─────────────────────────────────────────────────────────────────────────────
+
 def test_emergency_handler():
     test_cases = [
         ("I can't breathe properly",                    'breathing'),

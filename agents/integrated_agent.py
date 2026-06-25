@@ -1,77 +1,4 @@
-"""
-PROFESSIONAL VERSION v3.12 - SPECIALIZED IN FEMALE HORMONAL HEALTH
-==================================================================
 
-CHANGES v3.8 (over v3.7) — Alicia's feedback + dataset coverage:
-
-✅ FIX 1: System preamble enriched with Alicia's exact domain description
-         (covers metabolism, full female lifespan hormonal changes,
-         tiroid health linked to cycle phases, etc.)
-
-✅ FIX 2: New anti-pattern rules in system preamble:
-         - Spanish quality: gender/number agreement, correct accents
-           (prevents "las niveles", "Exercicio", "trigliceridos" errors)
-         - No literal interpretation of metaphorical/emotional questions
-           (e.g. "voy a ciegas" should not be read as cognitive impairment)
-         - No automatic "consulta ginecólogo" closing on every response —
-           recommend professional ONLY when clinically warranted
-         - Vary closings to avoid repetitive "cuídate" / "espero que te
-           encuentres mejor pronto"
-
-✅ FIX 3: low_risk_template extended with 5 new few-shot examples
-         covering Alicia's dataset blocks 8, 9, 10, 11:
-         - Meta-IA ("¿hasta dónde puede ayudar una IA?")
-         - Metaphorical/emotional ("¿voy a ciegas?")
-         - Cultural ("¿por qué las famosas no tienen menopausia?")
-         - Cognitive fog ("¿es normal olvidar palabras?")
-         - Sexual (low libido)
-
-✅ FIX 4: mental_health_template extended with 2 emotional-validation
-         examples that don't pathologize:
-         - "¿Estoy exagerando o realmente me está pasando algo?"
-         - "¿Por qué siento que no soy la misma?"
-
-✅ FIX 5: AI meta-responses refined — slightly warmer, less robotic,
-         consistent voice across general/cuando_medico/puede_recomendar.
-
-✅ FIX 6: Closing phrases pool expanded (was 2 per language, now 5)
-         to reduce repetition across consecutive answers.
-
-✅ FIX 7: Knowledge base size updated in docstring (484 → 2527 papers,
-         reflecting the expanded PubMed corpus + semantic search v3.0).
-
-CHANGES v3.7 (over v3.6) — Honest fallback when no PubMed evidence:
-
-✅ FIX 1: When the RAG agent doesn't find relevant PubMed papers
-         (low confidence), the system now adds an HONEST DISCLAIMER
-         instead of letting the LLM fabricate medical claims.
-
-✅ FIX 2: Stricter LLM prompt when there's no high-confidence context.
-
-✅ FIX 3: Works in tandem with rag_agent.py v3.0 (semantic search,
-         multilingual embeddings, 2527 papers covering the full female
-         hormonal health spectrum).
-
-CHANGES v3.6 (over v3.5):
-✅ System prompt translated to Spanish to prevent English vocabulary leak.
-✅ Anti-hallucination instructions in system prompt.
-✅ Dedicated handler for AI/app meta-questions (Block 8 of dataset).
-✅ Length guard on responses.
-
-CHANGES v3.5 (over v3.4):
-✅ "¿Qué tomo para la gripe?" correctly redirects out-of-scope.
-✅ Works in tandem with rag_agent.py v2.0 (PubMed citations).
-
-CHANGES v3.4 (over v3.3) — Following supervisor (Alicia) feedback:
-✅ System SPECIALIZED in female hormonal health.
-✅ Out-of-scope detection.
-✅ All prompt templates rewritten with female hormonal health examples.
-✅ Greeting message reflects specialization.
-
-KNOWLEDGE BASE: 2527 PubMed papers on female hormonal health
-                (curated by pubmed_fetcher.py v2.0, indexed with
-                semantic embeddings via sentence-transformers v3.0)
-"""
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 import os
@@ -100,20 +27,11 @@ def get_agent():
 
 
 class IntegratedHealthAgent:
-    """Professional Specialized Health Triage Agent v3.12
+   
 
-    Domain: Female hormonal health across the full lifespan
-    Audience: Women across all life stages (reproductive age, perimenopause,
-              menopause, postmenopause)
-    """
 
-    # ─────────────────────────────────────────────────────────────────────
-    # SCOPE DEFINITION — Female hormonal health domain
-    # ─────────────────────────────────────────────────────────────────────
-
-    # Keywords that indicate the question IS within scope
     IN_SCOPE_KEYWORDS = {
-        # Menstrual cycle
+       
         'es': [
             'menstruac', 'regla', 'ciclo', 'período', 'periodo', 'sangrado',
             'menstrual', 'ovulac', 'fase lútea', 'fase folicular', 'amenorrea',
@@ -206,8 +124,7 @@ class IntegratedHealthAgent:
         self._setup_templates()
 
     def _setup_varied_phrases(self):
-        # ✨ v3.8: expanded closing pool (was 2 per language) to reduce
-        # repetition across consecutive answers in the same conversation.
+     
         self.closings = {
             'es': [
                 "Cuídate.",
@@ -248,9 +165,7 @@ class IntegratedHealthAgent:
             'ar': [r'مش\s*مرتاح', r'تعبان', r'عندي\s*ألم']
         }
 
-    # ─────────────────────────────────────────────────────────────────────
-    # OUT-OF-SCOPE RESPONSES
-    # ─────────────────────────────────────────────────────────────────────
+  
     def _setup_out_of_scope_responses(self):
         """Polite redirection messages when the question is outside the
         scope of female hormonal health."""
@@ -286,11 +201,7 @@ class IntegratedHealthAgent:
             ),
         }
 
-        # ─────────────────────────────────────────────────────────────────
-        # AI META-QUESTIONS (Block 8 from Alicia's dataset)
-        # ─────────────────────────────────────────────────────────────────
-        # Curated answers for questions about the chatbot's own role,
-        # limits and proper use. v3.8: warmer, less robotic tone.
+        
         self.ai_meta_responses = {
             'es': {
                 'general': (
@@ -363,7 +274,7 @@ class IntegratedHealthAgent:
         """
         q = question.lower()
 
-        # "Can an app tell me what to take?" / "Should I take...?"
+        
         recommendation_patterns = [
             r'(puede|can)\s+(una?\s+)?(app|ia|chatbot|inteligencia\s+artificial|ai)\s+(decirme|tell\s+me)',
             r'(app|ia|chatbot|ai)\s+(decirme|tell\s+me)\s+(qu[eé]\s+tomar|what\s+to\s+take)',
@@ -373,7 +284,7 @@ class IntegratedHealthAgent:
         if any(re.search(p, q) for p in recommendation_patterns):
             return 'puede_recomendar'
 
-        # "When should I go to a doctor?"
+       
         doctor_patterns = [
             r'cu[áa]ndo\s+(tengo\s+que|debo|deber[ií]a)\s+ir\s+a',
             r'when\s+(should\s+i|do\s+i\s+have\s+to)\s+go',
@@ -383,7 +294,7 @@ class IntegratedHealthAgent:
         if any(re.search(p, q) for p in doctor_patterns):
             return 'cuando_medico'
 
-        # General AI/app questions
+      
         general_patterns = [
             r'(hasta\s+d[oó]nde|how\s+far)\s+(puede|can)\s+(ayudar|help).{0,20}(ia|ai|app)',
             r'qu[eé]\s+(puede|can)\s+(hacer|do)\s+(una?\s+)?(ia|ai|app)',
@@ -403,14 +314,7 @@ class IntegratedHealthAgent:
         return None
 
     def _setup_templates(self):
-        # ─────────────────────────────────────────────────────────────────
-        # SHARED SYSTEM PREAMBLE
-        # ─────────────────────────────────────────────────────────────────
-        # ✨ v3.8: enriched with Alicia's exact domain description +
-        # anti-pattern rules for Spanish quality, metaphor handling,
-        # AI-meta honesty, and varied closings.
-        # IMPORTANT: this preamble is in Spanish (not English) to prevent
-        # the LLM from "leaking" English vocabulary into Spanish responses.
+       
         system_preamble = (
             "Eres una asistente especializada en SALUD HORMONAL FEMENINA, "
             "diseñada para acompañar a las mujeres a lo largo de toda su vida hormonal.\n\n"
@@ -463,9 +367,7 @@ class IntegratedHealthAgent:
             "Responde SOLO en {lang_name}.\n"
         )
 
-        # ── LOW RISK ──────────────────────────────────────────────────────────
-        # ✨ v3.8: extended with 5 new examples covering blocks 8/9/10/11
-        # of Alicia's dataset (meta-IA, metaphor, cultural, cognitive, libido).
+        
         self.low_risk_template = PromptTemplate(
             input_variables=["question", "context", "lang_name"],
             template=(
@@ -550,7 +452,7 @@ class IntegratedHealthAgent:
             )
         )
 
-        # ── MEDIUM RISK ───────────────────────────────────────────────────────
+       
         self.medium_risk_template = PromptTemplate(
             input_variables=["question", "context", "lang_name"],
             template=(
@@ -591,7 +493,7 @@ class IntegratedHealthAgent:
             )
         )
 
-        # ── HIGH RISK ─────────────────────────────────────────────────────────
+        
         self.high_risk_template = PromptTemplate(
             input_variables=["question", "context", "lang_name"],
             template=(
@@ -621,9 +523,7 @@ class IntegratedHealthAgent:
             )
         )
 
-          # ── MENTAL HEALTH (hormone-related mood) ──────────────────────────────
-          # ✨ v3.8: 2 new examples for emotional validation without
-          # pathologizing ("estoy exagerando", "no soy la misma").
+          
         self.mental_health_template = PromptTemplate(
             input_variables=["question", "context", "lang_name"],
             template=(
@@ -687,7 +587,7 @@ class IntegratedHealthAgent:
             )
         )
 
-        # ── CLARIFICATION ─────────────────────────────────────────────────────
+       
         self.clarification_template = PromptTemplate(
             input_variables=["question", "lang_name"],
             template=(
@@ -709,9 +609,7 @@ class IntegratedHealthAgent:
             )
         )
 
-    # ─────────────────────────────────────────────────────────────────────
-    # LANGUAGE DETECTION (unchanged from v3.3)
-    # ─────────────────────────────────────────────────────────────────────
+    
     def detect_language(self, text: str) -> dict:
         text_lower = text.lower()
 
@@ -755,9 +653,7 @@ class IntegratedHealthAgent:
         lang_names = {"es": "español", "en": "English", "fr": "français"}
         return {"name": lang_names[detected_lang], "code": detected_lang, "is_greeting": False}
 
-    # ─────────────────────────────────────────────────────────────────────
-    # GREETING — reflects specialization
-    # ─────────────────────────────────────────────────────────────────────
+    
     def get_greeting_response(self, lang_code: str) -> str:
         greetings = {
             "es": (
@@ -788,9 +684,7 @@ class IntegratedHealthAgent:
         }
         return greetings.get(lang_code, greetings["es"])
 
-    # ─────────────────────────────────────────────────────────────────────
-    # SCOPE DETECTION — NEW in v3.4
-    # ─────────────────────────────────────────────────────────────────────
+    
     def _is_in_scope(self, question: str, lang_code: str) -> bool:
         """
         Determines whether the question is within the scope of female
@@ -799,27 +693,26 @@ class IntegratedHealthAgent:
         """
         q = question.lower()
 
-        # Get keyword list for the detected language (fallback to es+en)
+        
         keywords = self.IN_SCOPE_KEYWORDS.get(lang_code, [])
         if not keywords:
             keywords = self.IN_SCOPE_KEYWORDS['es'] + self.IN_SCOPE_KEYWORDS['en']
 
-        # Direct keyword match → in scope
+        
         for kw in keywords:
             if kw in q:
                 return True
 
-        # Short questions that are likely follow-ups (handled by memory)
-        # We don't want to block follow-ups like "y eso?" or "what about that?"
+        
         if len(question.split()) <= 5:
             return True
 
-        # Vague symptom expressions — let clarification handler ask for more info
+        
         for patterns in self.vague_symptoms.values():
             if any(re.search(p, q) for p in patterns):
                 return True
 
-        # Profile / memory questions ("how old am I", "what conditions do I have")
+        
         if self.memory.is_profile_question(question):
             return True
 
@@ -832,27 +725,27 @@ class IntegratedHealthAgent:
         """
         q = question.lower()
 
-        # Topics that are clearly outside scope (general medicine, men's health, etc.)
+        
         out_of_scope_topics = [
-            # General respiratory / infectious (handles "qué tomo para la gripe", etc.)
+            
             r'\b(gripe|flu|resfriad|cold(?!\s+sore)|covid|neumon[ií]a|pneumonia|bronqu|tos\s+seca|sore\s+throat|garganta)\b',
-            # Cardiovascular (unless menopause-related, which would have hit scope keywords)
+            
             r'\b(infarto|heart attack|stroke|ictus|colesterol(?!\s+y\s+menopaus))',
-            # Diabetes (general)
+            
             r'\b(diabetes\s+(tipo\s+1|type\s+1|infantil))',
-            # Pediatric (children's health)
+            
             r'\b(mi\s+hijo|my\s+son|mon\s+fils|niño|child(?!birth)|kid|enfant)\b',
-            # Men-specific
+           
             r'\b(próstata|prostate|disfunción\s+eréctil|erectile)',
-            # Trauma / accidents
+           
             r'\b(fractura|fracture|esguince|sprain|herida|wound|quemadura|burn)',
-            # General GI (unless cycle-related)
+           
             r'\b(gastritis|úlcera|ulcer|reflujo|reflux|hemorroides|hemorrhoid)',
-            # Skin (general dermatology)
+            
             r'\b(verruga|wart|psoriasis|eczema|eccema|acné(?!\s+(hormonal|menstrual)))',
-            # Eyes / ENT
+            
             r'\b(conjuntivitis|otitis|sinusitis|amigdalitis|tonsilit)',
-            # Generic flu/cold symptoms WITHOUT female context
+            
             r'\bdolor\s+de\s+garganta\b(?!.*(?:cicl|menstrua|menopaus|hormon))',
             r'\bsore\s+throat\b(?!.*(?:cycle|menstrua|menopaus|hormon))',
         ]
@@ -863,9 +756,7 @@ class IntegratedHealthAgent:
 
         return False
 
-    # ─────────────────────────────────────────────────────────────────────
-    # VAGUE SYMPTOM / CONTEXT OVERRIDES
-    # ─────────────────────────────────────────────────────────────────────
+  
     def _is_vague_symptom(self, question: str, lang_code: str) -> bool:
         if len(question.split()) > 8:
             return False
@@ -875,7 +766,7 @@ class IntegratedHealthAgent:
     def _context_override(self, question: str, lang_code: str):
         q = question.lower()
 
-        # Mild sadness — keep at LOW risk, treat as safety-sensitive (empathetic)
+        
         mild_sadness_patterns = [
             r'(estoy|me\s+siento|me\s+encuentro)\s+(un\s+poco|algo|un\s+tanto)\s+(triste|bajo|mal)',
             r'(i\s+feel|i\'m|i\s+am)\s+(a\s+bit|kind\s+of|somewhat|a\s+little)\s+(sad|down|blue|low)',
@@ -886,9 +777,7 @@ class IntegratedHealthAgent:
 
         return None
 
-    # ─────────────────────────────────────────────────────────────────────
-    # FOLLOW-UP DETECTION (unchanged from v3.3)
-    # ─────────────────────────────────────────────────────────────────────
+    
     def _is_follow_up(self, question: str) -> bool:
         follow_up_patterns = [
             r'^(y|también|además|pero|entonces)\s',
@@ -979,13 +868,11 @@ class IntegratedHealthAgent:
 
         return question
 
-    # ─────────────────────────────────────────────────────────────────────
-    # MAIN ENTRY POINT
-    # ─────────────────────────────────────────────────────────────────────
+    
     def answer(self, question: str, session_id: str = "default") -> str:
         start_time = time.time()
 
-        # 1. Emergency detection (highest priority — never blocked by scope)
+       
         is_emergency, emergency_category = EmergencyHandler.is_emergency(question)
         if is_emergency:
             emergency_response = EmergencyHandler.get_emergency_response(emergency_category, question)
@@ -1000,7 +887,7 @@ class IntegratedHealthAgent:
             )
             return emergency_response
 
-        # 2. Language detection + greeting
+        
         lang_info = self.detect_language(question)
         if lang_info.get("is_greeting"):
             response = self.get_greeting_response(lang_info["code"])
@@ -1010,7 +897,7 @@ class IntegratedHealthAgent:
                                   category="greeting", response_time=time.time() - start_time)
             return response
 
-        # 3. Profile question ("¿qué edad tengo?", "resúmeme mi historial")
+       
         if self.memory.is_profile_question(question):
             response = self.memory.build_profile_response(session_id, lang_info["code"])
             self.memory.add_message(session_id, "user", question)
@@ -1019,8 +906,7 @@ class IntegratedHealthAgent:
                                   category="profile_question", response_time=time.time() - start_time)
             return response
 
-        # 4. ✨ NEW v3.6: AI META-QUESTIONS (Block 8 of Alicia's dataset) ✨
-        # Questions about the chatbot itself get curated answers, not LLM-generated ones.
+        
         meta_key = self._is_ai_meta_question(question, lang_info["code"])
         if meta_key:
             lang = lang_info["code"] if lang_info["code"] in self.ai_meta_responses else 'es'
@@ -1033,9 +919,7 @@ class IntegratedHealthAgent:
                                   category=f"ai_meta_{meta_key}", response_time=time.time() - start_time)
             return response
 
-        # 5. ✨ NEW v3.4: OUT-OF-SCOPE DETECTION ✨
-        # Only redirect when the question is CLEARLY out of scope.
-        # Follow-ups, vague symptoms and ambiguous questions go through normal flow.
+        
         if self._is_clearly_out_of_scope(question, lang_info["code"]) \
                 and not self._is_follow_up(question):
             response = self.out_of_scope_responses.get(
@@ -1047,7 +931,7 @@ class IntegratedHealthAgent:
                                   category="out_of_scope", response_time=time.time() - start_time)
             return response
 
-        # 6. Vague symptom → ask clarification
+      
         if self._is_vague_symptom(question, lang_info["code"]):
             response = self._ask_clarification(question, lang_info)
             self.memory.add_message(session_id, "user", question)
@@ -1056,7 +940,7 @@ class IntegratedHealthAgent:
                                   category="clarification", response_time=time.time() - start_time)
             return response
 
-        # 7. Pre-safety check (crisis, self-harm, dosage requests)
+       
         safety_override = self._pre_safety_check(question, lang_info["code"])
         if safety_override:
             response = self._final_cleanup(safety_override, is_emergency_response=False)
@@ -1066,7 +950,7 @@ class IntegratedHealthAgent:
                                   category="safety_override", response_time=time.time() - start_time)
             return response
 
-        # 8. Risk assessment
+       
         context_result = self._context_override(question, lang_info["code"])
         if context_result:
             risk_level, is_safety_sensitive = context_result
@@ -1075,18 +959,18 @@ class IntegratedHealthAgent:
             risk_level = risk_assessment["risk_level"]
             is_safety_sensitive = risk_assessment.get("is_safety_sensitive", False)
 
-        # 9. RAG search (PubMed papers on female hormonal health)
+        
         rag_data = self.rag_agent.search(question, lang_info["code"], top_k=3)
         has_high_confidence = rag_data.get("has_high_confidence", False)
         has_any_results = bool(rag_data['results'])
 
-        # ✨ v3.7: Build context based on confidence level
+        
         if has_any_results:
-            # We have papers — use them as evidence
+           
             context = self.rag_agent.format_context(rag_data['results'])
             evidence_quality = "high" if has_high_confidence else "moderate"
         else:
-            # No relevant papers found — be HONEST instead of letting LLM invent
+            
             context = (
                 "ATENCIÓN: No se han encontrado estudios PubMed específicos sobre esta pregunta "
                 "en el knowledge base. Responde de forma GENERAL y HONESTA, sin citar estudios "
@@ -1095,7 +979,7 @@ class IntegratedHealthAgent:
             )
             evidence_quality = "none"
 
-        # 10. Memory enrichment + LLM response
+       
         enriched_question = self._enrich_with_memory(question, session_id)
         response = self._generate_response(
             question=enriched_question, risk_level=risk_level,
@@ -1103,7 +987,7 @@ class IntegratedHealthAgent:
             context=context, lang_info=lang_info
         )
 
-        # 11. Post-safety filter + closing + cleanup
+       
         response = self._post_safety_filter(response, lang_info["code"])
 
         if not is_safety_sensitive:
@@ -1111,12 +995,11 @@ class IntegratedHealthAgent:
 
         response = self._final_cleanup(response, is_emergency_response=False)
 
-        # 12. Append PubMed citations (if available)
-        # 12. Append PubMed citations (if available) — v3.9: honest fallback when no papers
+        
         if rag_data['results'] and rag_data.get('citations'):
             response += "\n\n" + rag_data['citations']
         else:
-            # Honest disclosure: no relevant PubMed papers found for this question
+           
             no_evidence_notes = {
                 'es': "\n\n📚 *Para esta pregunta no se han encontrado estudios PubMed directamente relevantes en la base de conocimiento. La respuesta se basa en conocimiento general sobre salud hormonal femenina.*",
                 'en': "\n\n📚 *No PubMed studies directly relevant to this question were found in the knowledge base. The answer is based on general knowledge about female hormonal health.*",
@@ -1125,7 +1008,7 @@ class IntegratedHealthAgent:
             }
             response += no_evidence_notes.get(lang_info["code"], no_evidence_notes['es'])
 
-        # 13. Save to memory + log
+        
         self.memory.add_message(session_id, "user", question)
         self.memory.add_message(session_id, "assistant", response)
 
@@ -1143,9 +1026,7 @@ class IntegratedHealthAgent:
         )
         return response
 
-    # ─────────────────────────────────────────────────────────────────────
-    # RESPONSE GENERATION
-    # ─────────────────────────────────────────────────────────────────────
+    
     def _ask_clarification(self, question: str, lang_info: dict) -> str:
         chain = self.clarification_template | self.llm
         r = chain.invoke({"question": question, "lang_name": lang_info["name"]})
@@ -1170,9 +1051,7 @@ class IntegratedHealthAgent:
 
         return r.content if hasattr(r, 'content') else str(r)
 
-    # ─────────────────────────────────────────────────────────────────────
-    # PRE-SAFETY CHECK (unchanged from v3.3)
-    # ─────────────────────────────────────────────────────────────────────
+   
     def _pre_safety_check(self, question: str, lang_code: str):
         q = question.lower()
 
@@ -1253,9 +1132,7 @@ class IntegratedHealthAgent:
 
         return None
 
-    # ─────────────────────────────────────────────────────────────────────
-    # POST-SAFETY FILTER (unchanged from v3.3)
-    # ─────────────────────────────────────────────────────────────────────
+   
     def _post_safety_filter(self, response: str, lang_code: str) -> str:
         for pattern, replacement in [
             (r'\byou have\b(?!\s+(?:the\s+right|a\s+point|enough))', 'you may have'),
@@ -1312,9 +1189,7 @@ class IntegratedHealthAgent:
 
         return response
 
-    # ─────────────────────────────────────────────────────────────────────
-    # LOGGING (unchanged from v3.3)
-    # ─────────────────────────────────────────────────────────────────────
+    
     def _log_interaction(self, question: str, answer: str, lang_info: dict,
                          category: str, response_time: float,
                          risk_assessment: dict = None, rag_results: list = None,
@@ -1341,8 +1216,6 @@ class IntegratedHealthAgent:
         )
 
 
-# ─────────────────────────────────────────────────────────────────────────
-# PUBLIC ENTRY POINT
-# ─────────────────────────────────────────────────────────────────────────
+
 def health_answer(question: str, session_id: str = "default") -> str:
     return get_agent().answer(question, session_id=session_id)

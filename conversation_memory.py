@@ -1,13 +1,3 @@
-"""
-Conversation Memory System v2.1
-FIXES:
-✅ FIX 1: extract_user_profile() — extrae nombre, edad, condiciones del historial
-✅ FIX 2: get_context_for_prompt() — filtra mensajes de terceros (bebé, hijo...)
-✅ FIX 3: is_profile_question() — detecta "resúmeme mi perfil", "recuerdas mi nombre"
-✅ FIX 4: Perfil real basado SOLO en lo que el usuario dijo (no inventa datos)
-✅ FIX 5: name_blacklist — evita capturar "Alérgica", "Diabético" como nombres
-✅ FIX 6: get_context_for_prompt() — excluye mensajes sobre terceros del contexto
-"""
 
 import json
 import re

@@ -1,7 +1,3 @@
-"""
-Healthcare Chatbot Logging System
-Comprehensive logging for tracking questions, answers, errors, and performance
-"""
 
 import logging
 import json
@@ -12,7 +8,7 @@ from typing import Optional, Dict, Any
 import time
 
 class HealthChatLogger:
-    """Advanced logger for healthcare chatbot interactions"""
+    
     
     def __init__(self, log_dir: str = "logs"):
         self.log_dir = Path(log_dir)
@@ -27,7 +23,7 @@ class HealthChatLogger:
         self._setup_error_logger()
     
     def _setup_error_logger(self):
-        """Setup traditional logger for errors"""
+       
         self.error_logger = logging.getLogger("HealthChatbot")
         self.error_logger.setLevel(logging.ERROR)
         
@@ -48,7 +44,7 @@ class HealthChatLogger:
         response_time: float = 0.0,
         metadata: Optional[Dict[str, Any]] = None
     ):
-        """Log a complete interaction"""
+        
         interaction = {
             "timestamp": datetime.now().isoformat(),
             "question": question,
@@ -89,7 +85,7 @@ class HealthChatLogger:
         value: float,
         tags: Optional[Dict[str, str]] = None
     ):
-        """Log performance metrics"""
+        
         metric = {
             "timestamp": datetime.now().isoformat(),
             "metric": metric_name,
@@ -101,7 +97,7 @@ class HealthChatLogger:
             f.write(json.dumps(metric, ensure_ascii=False) + "\n")
     
     def get_stats(self) -> Dict[str, Any]:
-        """Get basic statistics from logs"""
+        
         if not self.interactions_file.exists():
             return {"total_interactions": 0}
         
@@ -135,7 +131,7 @@ class HealthChatLogger:
 
 
 def log_agent_call(logger: HealthChatLogger, agent_name: str):
-    """Decorator to automatically log agent calls"""
+    
     def decorator(func):
         def wrapper(*args, **kwargs):
             start_time = time.time()

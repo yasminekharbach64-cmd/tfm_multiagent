@@ -1,13 +1,3 @@
-"""
-Risk Assessment Agent v3.2 — Manchester Triage System
-
-FIXES v3.2 (over v3.1):
-✅ FIX 1: "sangre en el papel/papel higiénico" → LOW (hemorrhoids context)
-✅ FIX 2: 37.x°C (subfebril) → LOW, not HIGH — only 38.5+ triggers HIGH for child
-✅ FIX 3: "un poco triste hoy" → LOW + safety_sensitive=True (mild, not MEDIUM)
-✅ FIX 4: blood_symptoms_non_emergency now excludes toilet paper context
-✅ FIX 5: fever_high_child now requires 38.5+ not just 38
-"""
 
 import re
 import time
@@ -28,12 +18,8 @@ class RiskLevel(Enum):
 
 
 class TriageRules:
-    """
-    Evidence-based triage rules based on Manchester Triage System.
-    v3.2: Fixed over-triaging of common benign presentations.
-    """
 
-    # ── HIGH RISK red flags ───────────────────────────────────────────────────
+    
     HIGH_RISK_RULES: List[Tuple[str, List[str]]] = [
 
         ("fever_high_child", [
@@ -108,7 +94,7 @@ class TriageRules:
         ]),
     ]
 
-    # ── MEDIUM RISK ───────────────────────────────────────────────────────────
+    
     MEDIUM_RISK_RULES: List[Tuple[str, List[str]]] = [
 
         ("persistent_fever_mild", [
@@ -177,7 +163,7 @@ class TriageRules:
         ]),
     ]
 
-    # ── SAFETY-SENSITIVE patterns ─────────────────────────────────────────────
+   
     SAFETY_SENSITIVE_PATTERNS: List[str] = [
         r"(suicid|self.?harm|automutil)",
         r"(quiero|want|veux)\s+(morir|die|mourir|hacerme\s+daño)",
@@ -201,7 +187,7 @@ class TriageRules:
         r"(i\s+feel|i'm)\s+(a\s+bit|kind\s+of)\s+(sad|down).{0,20}(today)",
     ]
 
-    # ── LOW RISK ──────────────────────────────────────────────────────────────
+    
     LOW_RISK_RULES: List[Tuple[str, List[str]]] = [
 
         ("wellness_question", [
@@ -253,7 +239,7 @@ class TriageRules:
 
 
 class RiskAssessmentAgent:
-    """Risk Assessment Agent v3.2 — Manchester Triage System"""
+   
 
     def __init__(self):
         self.logger = HealthChatLogger()

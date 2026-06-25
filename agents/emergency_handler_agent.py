@@ -1,17 +1,3 @@
-"""
-Emergency Detection & Response Handler v3.0
-
-IMPROVEMENTS v3.0:
-✅ FIXED: Language detection — no longer uses 'i' as English indicator
-✅ FIXED: Keyword matching with regex (handles variations, not just exact substrings)
-✅ FIXED: No phone numbers — generic phrases only (works in any country)
-✅ NEW: Missing emergencies added — choking child, anaphylaxis, seizures, overdose
-✅ NEW: Severity levels — CRITICAL (call emergency services now) vs URGENT (go to ER today)
-✅ NEW: Thunderclap headache detected as stroke/hemorrhage red flag
-✅ NEW: Aspirin advice removed from chest_pain (not appropriate without diagnosis)
-✅ NEW: Arabic darija improved for better detection
-"""
-
 import re
 from typing import Tuple, Optional
 

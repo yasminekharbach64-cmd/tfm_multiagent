@@ -1,8 +1,4 @@
-"""
-Medical Knowledge Base — PubMed Edition
-Carga papers científicos reales desde pubmed_knowledge_base.json
-Reemplaza la KB hardcodeada por datos reales de PubMed
-"""
+
 
 import json
 import os

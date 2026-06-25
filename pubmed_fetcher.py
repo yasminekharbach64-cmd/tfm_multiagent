@@ -1,20 +1,3 @@
-"""
-PubMed Fetcher v2.0 — EXTENDED COVERAGE
-========================================
-
-Recupera papers científicos de PubMed sobre TODO el espectro de
-salud hormonal femenina y los guarda en JSON para usar como
-knowledge base del RAG agent.
-
-CHANGES v2.0 (over v1):
-✅ Expanded from 3 queries to 15 queries
-✅ Coverage: menstrual cycle, fertility, perimenopause, menopause,
-   postmenopause, physical symptoms (skin, heat, fatigue, pain),
-   cognitive function, immune, cardiovascular, bone health,
-   sexuality, weight, thyroid, hormonal mood disorders
-✅ Expected output: ~1500-2000 unique papers (vs. 484 previously)
-✅ Better deduplication and metadata
-"""
 
 import requests
 import xml.etree.ElementTree as ET
@@ -30,11 +13,9 @@ OUTPUT_FILE = "agents/pubmed_knowledge_base.json"
 MAX_PAPERS_PER_QUERY = 200
 
 
-# ─────────────────────────────────────────────────────────────────────────
-# 15 QUERIES — Comprehensive coverage of female hormonal health
-# ─────────────────────────────────────────────────────────────────────────
+
 PUBMED_QUERIES = [
-    # ── ORIGINAL 3 QUERIES (kept) ───────────────────────────────────────
+    
     {
         "id": "query_01",
         "description": "Menopausia - Calidad de vida, sueño, estrés, fatiga, cognición",
@@ -64,7 +45,7 @@ PUBMED_QUERIES = [
         )
     },
 
-    # ── NEW QUERIES — PHYSICAL SYMPTOMS ─────────────────────────────────
+    
     {
         "id": "query_04",
         "description": "Sofocos y síntomas vasomotores",
@@ -102,7 +83,7 @@ PUBMED_QUERIES = [
         )
     },
 
-    # ── HORMONE THERAPY / TREATMENTS ────────────────────────────────────
+    
     {
         "id": "query_08",
         "description": "Terapia hormonal sustitutiva",
@@ -114,7 +95,7 @@ PUBMED_QUERIES = [
         )
     },
 
-    # ── REPRODUCTIVE HEALTH / MENSTRUAL CYCLE ───────────────────────────
+    
     {
         "id": "query_09",
         "description": "Ciclo menstrual, síndrome premenstrual y trastornos",
@@ -143,7 +124,7 @@ PUBMED_QUERIES = [
         )
     },
 
-    # ── THYROID & METABOLIC ─────────────────────────────────────────────
+    
     {
         "id": "query_12",
         "description": "Salud tiroidea y peso en mujeres",
@@ -155,7 +136,7 @@ PUBMED_QUERIES = [
         )
     },
 
-    # ── SEXUALITY & GENITOURINARY ──────────────────────────────────────
+    
     {
         "id": "query_13",
         "description": "Sexualidad, libido y salud genitourinaria en menopausia",
@@ -168,7 +149,7 @@ PUBMED_QUERIES = [
         )
     },
 
-    # ── COGNITION & BRAIN FOG ──────────────────────────────────────────
+    
     {
         "id": "query_14",
         "description": "Niebla mental, función cognitiva y memoria en menopausia",
@@ -181,7 +162,7 @@ PUBMED_QUERIES = [
         )
     },
 
-    # ── LIFESTYLE & PREVENTION ─────────────────────────────────────────
+    
     {
         "id": "query_15",
         "description": "Nutrición, ejercicio y prevención en menopausia",
@@ -196,9 +177,7 @@ PUBMED_QUERIES = [
 ]
 
 
-# ─────────────────────────────────────────────────────────────────────────
-# CORE FUNCTIONS (unchanged from v1)
-# ─────────────────────────────────────────────────────────────────────────
+
 
 def search_pubmed(query: str, max_results: int = MAX_PAPERS_PER_QUERY) -> List[str]:
     """Search PubMed and return list of PMIDs."""
@@ -252,7 +231,7 @@ def fetch_paper_details(pmids: List[str]) -> List[Dict]:
             papers = parse_pubmed_xml(response.text)
             all_papers.extend(papers)
 
-            # Rate limiting (3 req/sec without API key, 10 with)
+            
             sleep_time = 0.15 if API_KEY else 0.4
             time.sleep(sleep_time)
 
@@ -287,7 +266,7 @@ def parse_pubmed_xml(xml_text: str) -> List[Dict]:
         else:
             paper["title"] = ""
 
-        # Extract abstract (concatenating labelled sections if present)
+       
         abstract_texts = article.findall(".//AbstractText")
         if abstract_texts:
             abstract_parts = []
@@ -385,10 +364,6 @@ def save_knowledge_base(papers: List[Dict], output_file: str = OUTPUT_FILE):
     print(f"\n✅ Knowledge base guardada: {output_file}")
     print(f"   Total papers: {len(papers)}")
 
-
-# ─────────────────────────────────────────────────────────────────────────
-# MAIN
-# ─────────────────────────────────────────────────────────────────────────
 
 def fetch_all():
     print("=" * 70)

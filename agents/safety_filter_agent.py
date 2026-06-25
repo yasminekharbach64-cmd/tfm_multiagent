@@ -1,18 +1,4 @@
 # agents/safety_filter_agent.py
-"""
-Safety Filter Agent v3.0
-
-IMPROVEMENTS v3.0:
-✅ FIXED: Arabic support added to ALL responses
-✅ FIXED: Chest pain removed — handled by EmergencyHandler (no duplication)
-✅ FIXED: Medication filter no longer blocks legitimate informational questions
-✅ FIXED: Vitamin/supplement questions distinguished from dosage requests
-✅ NEW: Smarter medication detection — blocks advice, not education
-✅ NEW: Mental health filter — detects distress signals
-✅ NEW: Self-harm language detection
-✅ NEW: Diagnosis language softener (post-LLM cleanup)
-✅ NEW: filter_reasons improved for better logging/debugging
-"""
 
 import re
 from typing import Dict, Any

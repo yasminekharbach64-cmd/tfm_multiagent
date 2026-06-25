@@ -1,8 +1,4 @@
-"""
-PubMed Fetcher
-Recupera papers científicos de PubMed y los guarda en JSON
-para usar como knowledge base del RAG agent
-"""
+
 
 import requests
 import xml.etree.ElementTree as ET
@@ -113,7 +109,7 @@ def fetch_paper_details(pmids: List[str]) -> List[Dict]:
             papers = parse_pubmed_xml(response.text)
             all_papers.extend(papers)
 
-            # Respetar rate limit (3 req/sec sin API key, 10 con API key)
+            
             sleep_time = 0.15 if API_KEY else 0.4
             time.sleep(sleep_time)
 

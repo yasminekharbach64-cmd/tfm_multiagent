@@ -1,10 +1,4 @@
-﻿"""
-Gunicorn configuration for CyclIA production deployment.
-
-Servidor WSGI de producción para Flask. Se usa en Docker/Render
-en lugar del servidor de desarrollo de Flask (que no es apto para producción).
-"""
-
+﻿
 import os
 
 # === Server socket ===

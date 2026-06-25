@@ -1,8 +1,4 @@
-"""
-Response Normalizer Agent
-Ensures all responses maintain appropriate medical safety standards
-Reduces overconfidence, adds disclaimers, prevents diagnostic language
-"""
+
 
 import re
 from typing import Dict, Any
@@ -10,10 +6,7 @@ from agents.risk_agent import RiskLevel
 
 
 class ResponseNormalizer:
-    """
-    Validates and normalizes health responses to ensure medical safety
-    This is the CONTROL layer that prevents overconfident or dangerous responses
-    """
+ 
     
     def __init__(self):
         
@@ -47,17 +40,7 @@ class ResponseNormalizer:
         }
     
     def normalize(self, response: str, risk_level: RiskLevel, language: str) -> str:
-        """
-        Main normalization function
-        
-        Args:
-            response: Original response from health agent
-            risk_level: Risk level (LOW/MEDIUM/HIGH)
-            language: Language code (es/en/fr)
-        
-        Returns:
-            Normalized, safer response
-        """
+      
         
         
         if self._contains_diagnostic_language(response, language):
@@ -113,10 +96,7 @@ class ResponseNormalizer:
         return response
     
     def _normalize_high_risk(self, response: str, language: str) -> str:
-        """
-        HIGH RISK: Maximum caution, minimal detail, clear referral
-        Should be very brief and redirect to professional
-        """
+      
        
         sentences = response.split('.')
         
@@ -137,9 +117,7 @@ class ResponseNormalizer:
         return response
     
     def _normalize_medium_risk(self, response: str, language: str) -> str:
-        """
-        MEDIUM RISK: Conditional language, acknowledge uncertainty
-        """
+       
         
         conditional_intros = {
             'es': 'Sin poder determinar una causa específica, ',
@@ -162,9 +140,7 @@ class ResponseNormalizer:
         return response
     
     def _normalize_low_risk(self, response: str, language: str) -> str:
-        """
-        LOW RISK: Can be more informative but still general
-        """
+      
         
         educational_phrases = {
             'es': 'información general',
@@ -176,7 +152,7 @@ class ResponseNormalizer:
         return response
     
     def _ensure_proper_structure(self, response: str, risk_level: RiskLevel, language: str) -> str:
-        """Ensure response has proper structure and length"""
+        
         
         
         response = ' '.join(response.split())
@@ -191,7 +167,7 @@ class ResponseNormalizer:
         return response
     
     def _add_disclaimer(self, response: str, risk_level: RiskLevel, language: str) -> str:
-        """Add appropriate medical disclaimer based on risk level"""
+        
         
         
         has_disclaimer = any(word in response.lower() for word in 
@@ -222,7 +198,7 @@ class ResponseNormalizer:
         return response + disclaimer
     
     def _get_safe_referral(self, language: str, risk_level: RiskLevel) -> str:
-        """Return safe referral response when diagnostic language detected"""
+        
         referrals = {
             'es': 'No puedo proporcionar diagnósticos específicos. Los síntomas que describes requieren una evaluación médica profesional para determinar su causa. Por favor, consulta con un profesional sanitario. 💙',
             'en': 'I cannot provide specific diagnoses. The symptoms you describe require professional medical evaluation to determine their cause. Please consult with a healthcare professional. 💙',
@@ -231,10 +207,7 @@ class ResponseNormalizer:
         return referrals.get(language, referrals['es'])
     
     def validate_response_quality(self, response: str, risk_level: RiskLevel) -> Dict[str, Any]:
-        """
-        Validate response quality and safety
-        Returns metrics for logging
-        """
+       
         
         metrics = {
             'length': len(response),

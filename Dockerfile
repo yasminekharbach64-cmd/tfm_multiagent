@@ -1,11 +1,11 @@
-﻿# === CyclIA - Dockerfile para producción ===
-# Base: Python 3.11 slim (más ligera que la imagen completa)
+﻿
 FROM python:3.11-slim
 
 # Metadata
 LABEL maintainer="Yasmine Kharbach"
-LABEL project="CyclIA - TFM Agentes IA"
-LABEL description="Chatbot multi-agente de salud hormonal femenina"
+LABEL project="HealthBot- TFM Agentes IA"
+LABEL description="Agentes de Inteligencia Artificial para
+Aplicaciones Empresariales"
 
 # Variables de entorno
 ENV PYTHONDONTWRITEBYTECODE=1 \

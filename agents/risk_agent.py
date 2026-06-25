@@ -13,7 +13,10 @@ import re
 import time
 from enum import Enum
 from typing import Dict, Any, List, Tuple
-from langchain_ollama import ChatOllama
+from langchain_groq import ChatGroq
+from dotenv import load_dotenv
+import os
+load_dotenv()
 from langchain_core.prompts import PromptTemplate
 from logger import HealthChatLogger
 
@@ -256,11 +259,13 @@ class RiskAssessmentAgent:
         self.logger = HealthChatLogger()
         self.rules = TriageRules()
 
-        self.llm = ChatOllama(
-            model="mistral",
+        self.llm = ChatGroq(
+            model="llama-3.3-70b-versatile",
             temperature=0,
-            num_predict=10
+            max_tokens=10,
+            api_key=os.getenv("GROQ_API_KEY")
         )
+    
 
         self.assessment_prompt = PromptTemplate(
             input_variables=["question"],
